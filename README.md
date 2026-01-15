@@ -1,5 +1,4 @@
-[!DOCTYPE html.txt](https://github.com/user-attachments/files/24652361/DOCTYPE.html.txt)
-<!DOCTYPE html>
+[cursor code.txt](https://github.com/user-attachments/files/24652683/cursor.code.txt)[!DOCTYPE html.txt](https://github.com/user-attachments/files/24652361/DOCTYPE.html.txt)
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -178,6 +177,17 @@ body {
   color: #f5e9ff;
   min-height: 100vh;
 }
+[Uploading cu@keyframes pulse {
+  0% { filter: drop-shadow(0 0 2px #00f); }
+  50% { filter: drop-shadow(0 0 8px #0ff); }
+  100% { filter: drop-shadow(0 0 2px #00f); }
+}
+
+body {
+  cursor: url("assets/cursors/crystal-cursor.png") 16 16, auto;
+  animation: pulse 2s infinite;
+}
+rsor code.txt…]()
 
 /* Hybrid sky + season classes (can be layered later) */
 .sky-day { background: linear-gradient(#87ceeb, #1b1026); }
@@ -761,7 +771,3 @@ applySeasonalBackground();
 applySkyMagic();
 setInterval(applySeasonalBackground, 1000 * 60 * 60);
 setInterval(applySkyMagic, 1000 * 60 * 10);
-
-
-<img width="1024" height="1024" alt="cursor" src="https://github.com/user-attachments/assets/daa3d62b-e26e-439b-b4c0-b47d223838dc" />
-
