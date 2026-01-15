@@ -1,4 +1,4 @@
-[cursor code.txt](https://github.com/user-attachments/files/24652683/cursor.code.txt)[!DOCTYPE html.txt](https://github.com/user-attachments/files/24652361/DOCTYPE.html.txt)
+[!DOCTYPE html.txt](https://github.com/user-attachments/files/24652826/DOCTYPE.html.txt)
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -168,9 +168,11 @@
   <div id="ritual-circle"></div>
 
   <script src="script.js"></script>
-</body>
-</html>[body {.txt](https://github.com/user-attachments/files/24652366/body.txt)
-body {
+  
+  [2 cursor.txt](https://github.com/user-attachments/files/24652848/2.cursor.txt)
+<link rel="stylesheet" href="styles.css">
+
+[body {.txt](https://github.com/user-attachments/files/24652856/body.txt)body {
   margin: 0;
   font-family: "Georgia", serif;
   background: radial-gradient(circle at top, #1b1026, #050308);
@@ -388,7 +390,26 @@ textarea {
   0% { opacity: 0; transform: translate(-50%, -50%) scale(0.2); }
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
   100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
-}[NAVIGATION + ANIMATED TRANSITIONS.txt](https://github.com/user-attachments/files/24652369/NAVIGATION.%2B.ANIMATED.TRANSITIONS.txt)// NAVIGATION + ANIMATED TRANSITIONS
+}
+
+[cursor code.txt](https://github.com/user-attachments/files/24652865/cursor.code.txt)
+@keyframes pulse {
+  0% { filter: drop-shadow(0 0 2px #00f); }
+  50% { filter: drop-shadow(0 0 8px #0ff); }
+  100% { filter: drop-shadow(0 0 2px #00f); }
+}
+
+body {
+  cursor: url("assets/cursors/crystal-cursor.png") 16 16, auto;
+  animation: pulse 2s infinite;
+}
+
+<img width="1024" height="1024" alt="cursor" src="https://github.com/user-attachments/assets/c320442b-5315-4236-b2fa-c01f5d4b7875" />
+
+</body>
+
+[NAVIGATION + ANIMATED TRANSITIONS.txt](https://github.com/user-attachments/files/24652885/NAVIGATION.%2B.ANIMATED.TRANSITIONS.txt)
+// NAVIGATION + ANIMATED TRANSITIONS
 const navButtons = document.querySelectorAll("nav button");
 const sections = document.querySelectorAll("main section");
 let currentSection = document.querySelector("section.active");
@@ -759,11 +780,7 @@ function playRitualCircle() {
 applySeasonalBackground();
 applySkyMagic();
 setInterval(applySeasonalBackground, 1000 * 60 * 60);
-setInterval(applySkyMagic, 1000 * 60 * 10);[cursor code.txt](https://github.com/user-attachments/files/24652723/cursor.code.txt)
+setInterval(applySkyMagic, 1000 * 60 * 10);
 
-@keyframes pulse {
-  0% { filter: drop-shadow(0 0 2px #00f); }
-  50% { filter: drop-shadow(0 0 8px #0ff); }
-  100% { filter: drop-shadow(0 0 2px #00f); }
-}
 
+</html>
