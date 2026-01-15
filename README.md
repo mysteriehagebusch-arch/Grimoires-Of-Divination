@@ -767,7 +767,3 @@ setInterval(applySkyMagic, 1000 * 60 * 10);[cursor code.txt](https://github.com/
   100% { filter: drop-shadow(0 0 2px #00f); }
 }
 
-body {
-  cursor: url("assets/cursors/crystal-cursor.png") 16 16, auto;
-  animation: pulse 2s infinite;
-}
