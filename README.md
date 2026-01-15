@@ -170,6 +170,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 body {
   margin: 0;
   font-family: "Georgia", serif;
@@ -389,6 +390,7 @@ textarea {
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
   100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
 }
+
 // NAVIGATION + ANIMATED TRANSITIONS
 const navButtons = document.querySelectorAll("nav button");
 const sections = document.querySelectorAll("main section");
