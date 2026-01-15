@@ -763,4 +763,5 @@ setInterval(applySeasonalBackground, 1000 * 60 * 60);
 setInterval(applySkyMagic, 1000 * 60 * 10);
 
 
+<img width="1024" height="1024" alt="cursor" src="https://github.com/user-attachments/assets/daa3d62b-e26e-439b-b4c0-b47d223838dc" />
 
