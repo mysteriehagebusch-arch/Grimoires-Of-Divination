@@ -1,2 +1,82 @@
-# Grimoires-Of-Divination
-I want to build a website that people can go to study their Craft. Magic.... with games of mixing potions and crystals and herbs. meaning and definition of it all. a sprit animals' games that you can take care of virtually and go on fun adventure with. And so much more. Learn and track progress as you go.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grimoire of Divination</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Grimoire of Divination</h1>
+    <p>Welcome to your magical learning hub and interactive spirit realm.</p>
+    <nav>
+      <button data-section="home">Home</button>
+      <button data-section="grimoire">Grimoire</button>
+      <button data-section="games">Games</button>
+      <button data-section="library">Library</button>
+      <button data-section="profile">Profile</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="active">
+      <h2>Welcome, Seeker</h2>
+      <p>Study your Craft, tend your spirit animal, and explore the arts of divination.</p>
+    </section>
+
+    <!-- PROFILE / LOGIN MOCK -->
+    <section id="profile">
+      <h2>Your Magical Profile</h2>
+      <form id="profile-form">
+        <label>
+          Spiritual Name / Higher Power / Soul Name:
+          <input type="text" id="spirit-name" required />
+        </label>
+        <label>
+          Age:
+          <input type="number" id="age" min="1" />
+        </label>
+        <label>
+          Choose a Spirit Animal:
+          <select id="spirit-animal">
+		<option value="crow">
+Crow</option>
+		<option value="raven">
+Raven</option>
+            <option value="wolf">Wolf</option>
+            <option value="owl">Owl</option>
+            <option value="cat">Cat</option>
+            <option value="dragon">Dragon</option>
+          </select>
+        </label>
+        <button type="submit">Save Profile</button>
+      </form>
+      <div id="profile-display"></div>
+    </section>
+
+    <!-- GRIMOIRE -->
+    <section id="grimoire">
+      <h2>Grimoire</h2>
+      <div class="tabs">
+        <button data-tab="herbs">Herbs</button>
+        <button data-tab="crystals">Crystals</button>
+        <button data-tab="potions">Potions</button>
+        <button data-tab="meanings">Meanings</button>
+        <button data-tab="correspondences">Correspondences</button>
+        <button data-tab="candles">Candles</button>
+        <button data-tab="colors">Colors</button>
+        <button data-tab="elements">Elements</button>
+        <button data-tab="runes">Runes</button>
+        <button data-tab="symbols">Symbols</button>
+        <button data-tab="tarot">Tarot Cards</button>
+        <button data-tab="crystal-balls">Crystal Balls</button>
+        <button data-tab="zodiac">Zodiac</button>
+        <button data-tab="numerology">Numerology</button>
+        <button data-tab="astrology">Astrology</button>
+        <button data-tab="horoscopes">Horoscopes</button>
+        <button data-tab="letters-numbers">Letters & Number Meanings</button>
+        <button data-tab="notes">Notepad</button>
+        <button data-tab="ai">AI Question Bar</button>
+      </div>
