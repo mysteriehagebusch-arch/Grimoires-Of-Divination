@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +79,8 @@ Raven</option>
         <button data-tab="notes">Notepad</button>
         <button data-tab="ai">AI Question Bar</button>
       </div>
-	    <div id="grimoire-content">
+
+      <div id="grimoire-content">
         <!-- Content will be swapped by JS -->
         <p>Select a topic above to begin exploring.</p>
       </div>
@@ -912,5 +912,4 @@ function playRitualCircle() {
   circle.style.animation = "ritualSummon 2s ease-out";
   setTimeout(() => circle.style.animation = "none", 2000);
 }
-
 
