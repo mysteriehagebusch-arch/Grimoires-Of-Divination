@@ -1,72 +1,131 @@
-[2.3 sanctuary.txt](https://github.com/user-attachments/files/24657311/2.3.sanctuary.txt)
-[2.4 quest.txt](https://github.com/user-attachments/files/24657312/2.4.quest.txt)[3.5 summoning pet style.txt](https://github.com/user-attachments/files/24657323/3.5.summoning.pet.style.txt)
-[2.2 cont..txt](https://github.com/user-attachments/files/24657316/2.2.cont.txt)
-[2.1 Html spirit animals.txt](https://github.com/user-attachments/files/24657315/2.1.Html.spirit.animals.txt)
-[2 Html.txt](https://github.com/user-attachments/files/24657314/2.Html.txt)
-[2.5 ritual circle.txt](https://github.com/user-attachments/files/24657313/2.5.ritual.circle.txt)
-[3.6 species grid.txt](https://github.com/user-attachments/files/24657324/3.6.species.grid.txt)[3.4 pet glow code.txt](https://github.com/user-attachments/files/24657331/3.4.pet.glow.code.txt)
-[3.3 backgrounds for pets.txt](https://github.com/user-attachments/files/24657330/3.3.backgrounds.for.pets.txt)
-[3.2.txt](https://github.com/user-attachments/files/24657329/3.2.txt)
-[3.1 Css.txt](https://github.com/user-attachments/files/24657328/3.1.Css.txt)
-[3 Styles Css.txt](https://github.com/user-attachments/files/24657327/3.Styles.Css.txt)
-[3.8 ritual circle.txt](https://github.com/user-attachments/files/24657326/3.8.ritual.circle.txt)
-[3.7 quest.txt](https://github.com/user-attachments/files/24657325/3.7.quest.txt)
-[4.16 ritual circles.txt](https://github.com/user-attachments/files/24657334/4.16.ritual.circles.txt)
-[4.17.txt](https://github.com/user-attachments/files/24657335/4.17.txt)[4.15.txt](https://github.com/user-attachments/files/24657354/4.15.txt)
-[4.14.txt](https://github.com/user-attachments/files/24657353/4.14.txt)
-[4.13.txt](https://github.com/user-attachments/files/24657352/4.13.txt)
-[4.12.txt](https://github.com/user-attachments/files/24657351/4.12.txt)
-[4.11 quest script.txt](https://github.com/user-attachments/files/24657350/4.11.quest.script.txt)
-[4.10.txt](https://github.com/user-attachments/files/24657349/4.10.txt)
-[4.9.txt](https://github.com/user-attachments/files/24657348/4.9.txt)
-[4.8 script.txt](https://github.com/user-attachments/files/24657347/4.8.script.txt)
-[4.7.txt](https://github.com/user-attachments/files/24657346/4.7.txt)
-[4.6 script summoning pet.txt](https://github.com/user-attachments/files/24657345/4.6.script.summoning.pet.txt)
-[4.5 apply pet bg.txt](https://github.com/user-attachments/files/24657344/4.5.apply.pet.bg.txt)
-[4.4 pet background.txt](https://github.com/user-attachments/files/24657343/4.4.pet.background.txt)
-[4.3.txt](https://github.com/user-attachments/files/24657342/4.3.txt)
-[4.2 Question if needed for coding.txt](https://github.com/user-attachments/files/24657341/4.2.Question.if.needed.for.coding.txt)
-[4.1 script.txt](https://github.com/user-attachments/files/24657340/4.1.script.txt)
-[4 script.js.txt](https://github.com/user-attachments/files/24657339/4.script.js.txt)
-[4.20.txt](https://github.com/user-attachments/files/24657338/4.20.txt)
-[4.19.txt](https://github.com/user-attachments/files/24657337/4.19.txt)
-[4.18.txt](http[10.2 young panther.txt](https://github.com/user-attachments/files/24657360/10.2.young.panther.txt)
-s://github.com/user-attachments/files/24657336/4.18.txt)
-[10.3 adult panther.txt](https://github.com/user-attachments/files/24657361/10.3.adult.panther.txt)[10.1 baby panther.txt](https://github.com/user-attachments/files/24657401/10.1.baby.panther.txt)
-[9.4 ascended snake.txt](https://github.com/user-attachments/files/24657400/9.4.ascended.snake.txt)
-[9.3 adult snake.txt](https://github.com/user-attachments/files/24657399/9.3.adult.snake.txt)
-[9.2 young snake.txt](https://github.com/user-attachments/files/24657398/9.2.young.snake.txt)
-[9.1 baby snake.txt](https://github.com/user-attachments/files/24657397/9.1.baby.snake.txt)
-[8.4 ascended rabbit.txt](https://github.com/user-attachments/files/24657396/8.4.ascended.rabbit.txt)
-[8.3 adult rabbit.txt](https://github.com/user-attachments/files/24657395/8.3.adult.rabbit.txt)
-[8.2 young rabbit.txt](https://github.com/user-attachments/files/24657394/8.2.young.rabbit.txt)
-[8.1 baby rabbit.txt](https://github.com/user-attachments/files/24657393/8.1.baby.rabbit.txt)
-[7.4 ascended fox.txt](https://github.com/user-attachments/files/24657392/7.4.ascended.fox.txt)
-[7.3 adult fox.txt](https://github.com/user-attachments/files/24657391/7.3.adult.fox.txt)
-[7.2 young fox.txt](https://github.com/user-attachments/files/24657390/7.2.young.fox.txt)
-[7.1 BABY FOX.txt](https://github.com/user-attachments/files/24657389/7.1.BABY.FOX.txt)
-[6.4 ascended deer.txt](https://github.com/user-attachments/files/24657388/6.4.ascended.deer.txt)
-[6.3 adult deer.txt](https://github.com/user-attachments/files/24657387/6.3.adult.deer.txt)
-[6.2  young deer.txt](https://github.com/user-attachments/files/24657386/6.2.young.deer.txt)
-[6.1 baby deer.txt](https://github.com/user-attachments/files/24657385/6.1.baby.deer.txt)
-[5.4 ascended owl.txt](https://github.com/user-attachments/files/24657384/5.4.ascended.owl.txt)
-[5.3 adult owl.txt](https://github.com/user-attachments/files/24657383/5.3.adult.owl.txt)
-[5.2 young owl.txt](https://github.com/user-attachments/files/24657382/5.2.young.owl.txt)
-[5.1 baby owl.txt](https://github.com/user-attachments/files/24657381/5.1.baby.owl.txt)
-[4.4 ascended raven.txt](https://github.com/user-attachments/files/24657379/4.4.ascended.raven.txt)
-[4.3 adult raven.txt](https://github.com/user-attachments/files/24657378/4.3.adult.raven.txt)
-[4.2 young raven.txt](https://github.com/user-attachments/files/24657377/4.2.young.raven.txt)
-[4.1 baby raven.txt](https://github.com/user-attachments/files/24657376/4.1.baby.raven.txt)
-[3.4 ascended dragon.txt](https://github.com/user-attachments/files/24657375/3.4.ascended.dragon.txt)
-[3.3 adult dragon.txt](https://github.com/user-attachments/files/24657374/3.3.adult.dragon.txt)
-[3.2 young dragon.txt](https://github.com/user-attachments/files/24657373/3.2.young.dragon.txt)
-[3.1 Baby Dragon.txt](https://github.com/user-attachments/files/24657372/3.1.Baby.Dragon.txt)
-[2.4 ascended cat.txt](https://github.com/user-attachments/files/24657370/2.4.ascended.cat.txt)
-[2.3 adult cat.txt](https://github.com/user-attachments/files/24657369/2.3.adult.cat.txt)
-[2.2 young cat.txt](https://github.com/user-attachments/files/24657368/2.2.young.cat.txt)
-[2.1 Baby cat.txt](https://github.com/user-attachments/files/24657367/2.1.Baby.cat.txt)
-[1.4 Ascended wolf.txt](https://github.com/user-attachments/files/24657366/1.4.Ascended.wolf.txt)
-[1.3 Adult wolf.txt](https://github.com/user-attachments/files/24657365/1.3.Adult.wolf.txt)
-[1.2Young wolf.txt](https://github.com/user-attachments/files/24657364/1.2Young.wolf.txt)
-[1.1 Baby wolf.txt](https://github.com/user-attachments/files/24657363/1.1.Baby.wolf.txt)
-[10.4 ascended panther.txt](https://github.com/user-attachments/files/24657362/10.4.ascended.panther.txt)
+Grimoires-Of-Divination/
+│
+├── index.html
+├── styles.css
+├── script.js
+│
+└── assets/
+    ├── images/
+    ├── cursors/
+    └── icons/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimoire of Divination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="theme-grimoire">
+
+    <header>
+        <h1>Grimoire of Divination</h1>
+        <nav>
+            <button data-theme="grimoire">Grimoire</button>
+            <button data-theme="celestial">Celestial</button>
+            <button data-theme="druidic">Druidic</button>
+            <button data-theme="gothic">Gothic</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome, Mystic</h2>
+            <p>Choose your path and let the magic unfold.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cinzel", serif;
+    color: white;
+    min-height: 100vh;
+    transition: background 1s ease, color 1s ease;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* THEMES */
+
+/* A — Dark Mystical Grimoire */
+.theme-grimoire {
+    background: radial-gradient(circle at center, #2a0033, #0a0011);
+}
+.theme-grimoire nav button[data-theme="grimoire"] {
+    background: #5a1a8a;
+    color: white;
+}
+
+/* B — Soft Celestial Witchcore */
+.theme-celestial {
+    background: linear-gradient(180deg, #d8caff, #a7d8ff, #ffffff);
+    color: #222;
+}
+.theme-celestial nav button[data-theme="celestial"] {
+    background: #b8aaff;
+    color: #222;
+}
+
+/* C — Forest Druidic Magic */
+.theme-druidic {
+    background: linear-gradient(180deg, #0f3d1e, #1a5e2a, #0b2412);
+}
+.theme-druidic nav button[data-theme="druidic"] {
+    background: #3fa34d;
+    color: #0b2412;
+}
+
+/* D — Gothic Occult */
+.theme-gothic {
+    background: linear-gradient(180deg, #000000, #1a1a1a, #000000);
+}
+.theme-gothic nav button[data-theme="gothic"] {
+    background: #444;
+    color: #eee;
+}
+
+/* BUTTON HOVER */
+nav button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* INTRO SECTION */
+.intro {
+    text-align: center;
+    margin-top: 100px;
+}
+const buttons = document.querySelectorAll("nav button");
+const body = document.body;
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const theme = btn.dataset.theme;
+        body.className = `theme-${theme}`;
+    });
+});
