@@ -30,7 +30,6 @@
     <script src="script.js"></script>
 </body>
 </html>
-
 [3 Styles Css.txt](https://github.com/user-attachments/files/24657523/3.Styles.Css.txt)
 /* GLOBAL RESET */
 * {
@@ -267,7 +266,6 @@ document.getElementById("rest-btn").addEventListener("click", () => {
 .actions button:hover {
     transform: scale(1.1);
 }
-
   [4.1 script.txt](https://github.com/user-attachments/files/24657629/4.1.script.txt)
 // SPIRIT ANIMAL SYSTEM
 let animal = {
