@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grimoire of Divination</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="theme-grimoire">
+
+    <div class="magic-particles"></div>
+
+    <header>
+        <h1>Grimoire of Divination</h1>
+        <nav>
+            <button data-theme="grimoire">Grimoire</button>
+            <button data-theme="celestial">Celestial</button>
+            <button data-theme="druidic">Druidic</button>
+            <button data-theme="gothic">Gothic</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Spirit Sanctuary -->
+        <section id="spirit-sanctuary" class="panel">
+            <h2>Spirit Animal Sanctuary</h2>
+            <div id="animal-grid"></div>
+        </section>
+
+        <!-- Active Spirit Animal -->
+        <section id="active-animal" class="panel">
+            <h2 id="active-name">Select a Spirit Animal</h2>
+
+            <div class="animal-display">
+                <img id="active-image" src="" alt="">
+            </div>
+
+            <div class="stats">
+                <p><strong>Level:</strong> <span id="active-level">—</span></p>
+                <p><strong>XP:</strong> <span id="active-xp">—</span></p>
+                <p><strong>Mood:</strong> <span id="active-mood">—</span></p>
+                <p><strong>Energy:</strong> <span id="active-energy">—</span></p>
+            </div>
+
+            <div class="actions">
+                <button id="feed-btn">Feed</button>
+                <button id="play-btn">Play</button>
+                <button id="rest-btn">Rest</button>
+            </div>
+        </section>
+
+        <!-- Species Selection -->
+        <section id="species-select" class="panel">
+            <h2>Select a Spirit Animal</h2>
+            <div id="species-grid"></div>
+        </section>
+
+        <!-- Quest Board -->
+        <section id="quest-board" class="panel">
+            <h2>Spirit Animal Quests</h2>
+            <p id="quest-active-name">Select a spirit animal to see quests.</p>
+            <div id="quest-list"></div>
+        </section>
+
+        <!-- Ritual Circle -->
+        <section id="ritual-circle" class="panel">
+            <h2>Ritual Circle</h2>
+            <p id="ritual-status">Select a ritual to begin.</p>
+
+            <div id="ritual-list"></div>
+
+            <div id="ritual-circle-visual">
+                <div class="circle"></div>
+                <div class="rune-layer"></div>
+                <div class="glow-layer"></div>
+            </div>
+
+            <button id="perform-ritual-btn" disabled>Perform Ritual</button>
+        </section>
+
+    </main>
+
+</body>
+</html>
