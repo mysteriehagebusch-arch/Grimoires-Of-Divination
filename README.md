@@ -1,213 +1,124 @@
-.theme-grimoire {
-    background:
-        url("assets/backgrounds/grimoire-texture.png"),
-        radial-gradient(circle at center, #2a0033, #0a0011);
-    background-size: cover;
-    background-blend-mode: overlay;
-}Grimoires-Of-Divination
-4.11 quest script.txt2.4 quest.txt4.1 script.txt2 Html.txt <!DOCTYPE html>
+[2.0.txt](https://github.com/user-attachments/files/24658566/2.0.txt)
+[2 Html.txt](https://github.com/user-attachments/files/24658565/2.Html.txt)
+[2.7.txt](https://github.com/user-attachments/files/24658564/2.7.txt)
+[2.6.txt](https://github.com/user-attachments/files/24658563/2.6.txt)
+[2.5 ritual circle.txt](https://github.com/user-attachments/files/24658562/2.5.ritual.circle.txt)
+[2.4 quest.txt](https://github.com/user-attachments/files/24658561/2.4.quest.txt)
+[2.3 sanctuary.txt](https://github.com/user-attachments/files/24658560/2.3.sanctuary.txt)
+[2.2 cont..txt](https://github.com/user-attachments/files/24658559/2.2.cont.txt)
+[2.1 Html spirit animals.txt](https://github.com/user-attachments/files/24658558/2.1.Html.spirit.animals.txt)
+[3.10.txt](https://github.com/user-attachments/files/24658578/3.10.txt)
+[3.11.txt](https://github.com/user-attachments/files/24658579/3.11.txt)[3.9.txt](https://github.com/user-attachments/files/24658594/3.9.txt)
+[3.8 ritual circle.txt](https://github.com/user-attachments/files/24658593/3.8.ritual.circle.txt)
+[3.7 quest.txt](https://github.com/user-attachments/files/24658592/3.7.quest.txt)
+[3.6 species grid.txt](https://github.com/user-attachments/files/24658591/3.6.species.grid.txt)
+[3.5 summoning pet style.txt](https://github.com/user-attachments/files/24658590/3.5.summoning.pet.style.txt)
+[3.4 pet glow code.txt](https://github.com/user-attachments/files/24658589/3.4.pet.glow.code.txt)
+[3.3 backgrounds for pets.txt](https://github.com/user-attachments/files/24658588/3.3.backgrounds.for.pets.txt)
+[3.2.txt](https://github.com/user-attachments/files/24658587/3.2.txt)
+[3.1 Css.txt](https://github.com/user-attachments/files/24658586/3.1.Css.txt)
+[3 Styles Css.txt](https://github.com/user-attachments/files/24658585/3.Styles.Css.txt)
+[3.o.txt](https://github.com/user-attachments/files/24658584/3.o.txt)
+[3.15.txt](https://github.com/user-attachments/files/24658583/3.15.txt)
+[3.14.txt](https://github.com/user-attachments/files/24658582/3.14.txt)
+[3.13.txt](https://github.com/user-attachments/files/24658581/3.13.txt)
+[3.12.txt](https://github.com/user-attachments/files/24658580/3.12.txt)
+[4.14.txt](https://github.com/user-attachments/files/24658598/4.14.txt)
+[4.15.txt](https://github.com/user-attachments/files/24658600/4.15.txt)
+[4.13.txt](https://github.com/user-attachments/files/24658619/4.13.txt)
+[4.12.txt](https://github.com/user-attachments/files/24658618/4.12.txt)
+[4.11 quest script.txt](https://github.com/user-attachments/files/24658617/4.11.quest.script.txt)
+[4.10.txt](https://github.com/user-attachments/files/24658616/4.10.txt)
+[4.9.txt](https://github.com/user-attachments/files/24658615/4.9.txt)
+[4.8 script.txt](https://github.com/user-attachments/files/24658614/4.8.script.txt)
+[4.7.txt](https://github.com/user-attachments/files/24658613/4.7.txt)
+[4.6 script summoning pet.txt](https://github.com/user-attachments/files/24658612/4.6.script.summoning.pet.txt)
+[4.5 apply pet bg.txt](https://github.com/user-attachments/files/24658611/4.5.apply.pet.bg.txt)
+[4.4 pet background.txt](https://github.com/user-attachments/files/24658610/4.4.pet.background.txt)
+[4.3.txt](https://github.com/user-attachments/files/24658609/4.3.txt)
+[4.2 Question if needed for coding.txt](https://github.com/user-attachments/files/24658608/4.2.Question.if.needed.for.coding.txt)
+[4.1 script.txt](https://github.com/user-attachments/files/24658607/4.1.script.txt)
+[4 script.js.txt](https://github.com/user-attachments/files/24658606/4.script.js.txt)
+[4.20.txt](https://github.com/user-attachments/files/24658605/4.20.txt)
+[4.19.txt](https://github.com/user-attachments/files/24658604/4.19.txt)
+[4.18.txt](https://github.com/user-attachments/files/24658603/4.18.txt)
+[4.17.txt](https://github.com/user-attachments/files/24658602/4.17.txt)
+[4.16 ritual circles.txt](https://github.com/user-attachments/files/24658601/4.16.ritual.circles.txt)
+Full‑body baby wolf standing on a small glowing rune platform, deep purple fur, faint moonlit markings, tiny runes glowing softly on paws, candlelit shadows, Dark Mystical Grimoire style.
 
-Grimoire of Divination
-Grimoire Celestial Druidic Gothic
-Welcome, Mystic
-Choose your path and let the magic unfold.
+Full‑body young wolf on glowing rune platform, brighter lunar markings, runes along legs, pale glowing eyes, soft violet aura, arcane sigils floating faintly, Grimoire aesthetic.
 
-3 Styles Css.txt /* GLOBAL RESET */
+Full‑body adult arcane wolf on rune platform, strong moon‑runes across fur, glowing crescent aura, ember sparks around paws, deep purple shadows, ancient grimoire energy.
 
-{ margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: “Cinzel”, serif; color: white; min-height: 100vh; transition: background 1s ease, color 1s ease; }
+Full‑body ascended moon‑wolf on ornate glowing rune platform, intense lunar aura, floating runes, spectral crescent symbols, powerful violet energy, high‑arcane Grimoire style.
 
-/* HEADER */ header { text-align: center; padding: 20px; }
+Full‑body baby witch‑cat on glowing rune platform, soft purple fur, tiny candle‑flame eyes, faint runes on tail tip, gentle grimoire glow.
 
-nav button { margin: 5px; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit; font-size: 1rem; border-radius: 6px; transition: 0.3s; }
+Full‑body young witch‑cat on rune platform, glowing whisker sparks, runic tail markings, violet smoke around paws, arcane familiar energy.
 
-/* THEMES */
+Full‑body adult witch‑familiar cat on rune platform, strong glowing runes, shadow‑cloak aura, floating candle‑flame embers, deep grimoire magic.
 
-/* A — Dark Mystical Grimoire */ .theme-grimoire { background: radial-gradient(circle at center, #2a0033, #0a0011); } .theme-grimoire nav button[data-theme=”grimoire”] { background: #5a1a8a; color: white; }
+Full‑body ascended arcane cat on ornate rune platform, intense violet aura, floating sigils, spectral tail flames, ancient grimoire familiar energy.
 
-/* B — Soft Celestial Witchcore */ .theme-celestial { background: linear-gradient(180deg, #d8caff, #a7d8ff, #ffffff); color: #222; } .theme-celestial nav button[data-theme=”celestial”] { background: #b8aaff; color: #222; }
+Full‑body baby dragonling on glowing rune platform, tiny wings, runes etched into scales, soft ember sparks, purple grimoire glow.
 
-/* C — Forest Druidic Magic */ .theme-druidic { background: linear-gradient(180deg, #0f3d1e, #1a5e2a, #0b2412); } .theme-druidic nav button[data-theme=”druidic”] { background: #3fa34d; color: #0b2412; }
+Full‑body young rune‑dragon on rune platform, glowing sigils across body, ember sparks, small arcane aura, mystical grimoire style.
 
-/* D — Gothic Occult */ .theme-gothic { background: linear-gradient(180deg, #000000, #1a1a1a, #000000); } .theme-gothic nav button[data-theme=”gothic”] { background: #444; color: #eee; }
+Full‑body adult rune‑dragon on rune platform, bright runic scales, glowing wings, swirling arcane energy, deep purple shadows.
 
-/* BUTTON HOVER */ nav button:hover { transform: scale(1.1); filter: brightness(1.2); }
 
-/* INTRO SECTION */ .intro { text-align: center; margin-top: 100px; } 4 script.js.txt
+Full‑body baby raven on glowing rune platform, soft violet feathers, tiny glowing eyes, faint arcane shimmer.
 
-const buttons = document.querySelectorAll(“nav button”); const body = document.body;
+Full‑body young raven on rune platform, iridescent purple feathers, glowing runes on wings, shadowy aura.
 
-buttons.forEach(btn => { btn.addEventListener(“click”, () => { const theme = btn.dataset.theme; body.className = theme-${theme}; }); });
+Full‑body adult shadow‑raven on rune platform, spectral wing edges, floating glyphs, deep grimoire shadows.
 
-[Uploading// SPIRIT ANIMAL SYSTEM let animal = { name: “Your Spirit”, level: 1, xp: 0, xpNeeded: 50, mood: “Calm”, energy: 100, stage: “baby” // baby → young → adult → ascended };
+Full‑body ascended raven on ornate rune platform, intense violet glow, runic halo, spectral feathers, arcane messenger energy.
 
-// Load saved data if (localStorage.getItem(“spiritAnimal”)) { animal = JSON.parse(localStorage.getItem(“spiritAnimal”)); updateUI(); }
+Full‑body baby owl on glowing rune platform, soft feathers with faint constellation patterns, glowing rune eyes.
 
-// Save data function saveAnimal() { localStorage.setItem(“spiritAnimal”, JSON.stringify(animal)); }
+Full‑body young oracle owl on rune platform, brighter star‑patterned feathers, soft celestial aura, grimoire style.
 
-// Update UI function updateUI() { document.getElementById(“animal-name”).textContent = animal.name; document.getElementById(“animal-level”).textContent = animal.level; document.getElementById(“animal-xp”).textContent = animal.xp; document.getElementById(“animal-xp-needed”).textContent = animal.xpNeeded; document.getElementById(“animal-mood”).textContent = animal.mood; document.getElementById(“animal-energy”).textContent = animal.energy;
+Full‑body adult oracle owl on rune platform, glowing constellation wings, arcane halo, deep purple shadows.
 
-document.getElementById("animal-image").src =
-    `assets/images/spirit-${animal.stage}.png`; }
-// XP + Leveling function addXP(amount) { animal.xp += amount;
+Full‑body ascended oracle owl on ornate rune platform, intense celestial aura, floating runes, star‑halo, ancient grimoire oracle energy.
 
-if (animal.xp >= animal.xpNeeded) {
-    animal.level++;
-    animal.xp = 0;
-    animal.xpNeeded = Math.floor(animal.xpNeeded * 1.4);
-    evolve();
-}
+Full‑body baby deer on glowing rune platform, tiny glowing antler buds, mossy magical texture, soft druidic‑grimoire blend.
 
-saveAnimal();
-updateUI(); }
-// Evolution logic function evolve() { if (animal.level >= 1 && animal.level < 5) animal.stage = “baby”; if (animal.level >= 5 && animal.level < 10) animal.stage = “young”; if (animal.level >= 10 && animal.level < 20) animal.stage = “adult”; if (animal.level >= 20) animal.stage = “ascended”; }
+Full‑body young rune‑stag on rune platform, glowing antlers with runes, forest‑arcane aura, purple‑green blend.
 
-// Actions document.getElementById(“feed-btn”).addEventListener(“click”, () => { if (animal.energy < 100) animal.energy += 10; addXP(10); animal.mood = “Content”; saveAnimal(); updateUI(); });
+Full‑body adult rune‑stag on rune platform, large runic antlers, glowing vines, arcane forest energy.
 
-document.getElementById(“play-btn”).addEventListener(“click”, () => { if (animal.energy > 0) animal.energy -= 10; addXP(15); animal.mood = “Happy”; saveAnimal(); updateUI(); });
+Full‑body ascended rune‑stag on ornate rune platform, massive spectral antlers, floating runes, druidic‑grimoire ascension aura.
 
-document.getElementById(“rest-btn”).addEventListener(“click”, () => { animal.energy = 100; animal.mood = “Rested”; saveAnimal(); updateUI(); }); 4.1 script.txt…]() 2.1 Html spirit animals.txt
+Full‑body baby fox on glowing rune platform, glowing tail tip, tiny rune sparks, playful grimoire energy.
 
-Your Spirit Animal
-Spirit Animal
-Name: Unnamed
 
-Level: 1
+Full‑body adult rune‑fox on rune platform, multiple glowing tails, arcane aura, trickster energy.
 
-XP: 0 / 50
+Full‑body ascended rune‑fox on ornate rune platform, spectral tails, floating sigils, intense violet glow.
 
-Mood: Calm
+Full‑body baby moon‑hare on glowing rune platform, soft glowing fur markings, tiny runes around ears.
 
-Energy: 100%
+Full‑body young moon‑hare on rune platform, brighter lunar markings, soft arcane aura.
 
-Feed Play Rest
-3.1 Css.txt
+Full‑body adult moon‑hare on rune platform, long ethereal ears, glowing lunar aura.
 
-/* SPIRIT ANIMAL PANEL */ .panel { max-width: 600px; margin: 60px auto; padding: 30px; background: rgba(0,0,0,0.4); border-radius: 12px; backdrop-filter: blur(6px); text-align: center; }
+Full‑body ascended moon‑hare on ornate rune platform, floating runes, spectral ears, powerful lunar grimoire energy.
 
-.animal-display img { width: 200px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.4)); transition: 0.5s ease; }
+Full‑body baby serpent on glowing rune platform, silver runic scales, tiny glowing eyes, soft shadow aura.
 
-.stats p { margin: 8px 0; font-size: 1.1rem; }
+Full‑body young rune‑serpent on rune platform, glowing scale patterns, faint spectral hood.
 
-.actions button { margin: 10px; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-family: inherit; transition: 0.3s; }
+Full‑body adult rune‑serpent on rune platform, strong silver runes, shadow aura, arcane smoke.
 
-.actions button:hover { transform: scale(1.1); } 4.1 script.txt // SPIRIT ANIMAL SYSTEM let animal = { name: “Your Spirit”, level: 1, xp: 0, xpNeeded: 50, mood: “Calm”, energy: 100, stage: “baby” // baby → young → adult → ascended };
+Full‑body adult rune‑serpent on rune platform, strong silver runes, shadow aura, arcane smoke.
 
-// Load saved data if (localStorage.getItem(“spiritAnimal”)) { animal = JSON.parse(localStorage.getItem(“spiritAnimal”)); updateUI(); }
+Full‑body baby shadow‑panther on glowing rune platform, black‑violet fur, tiny shifting runes, glowing amethyst eyes.
 
-// Save data function saveAnimal() { localStorage.setItem(“spiritAnimal”, JSON.stringify(animal)); }
+Full‑body young shadow‑panther on rune platform, runes moving across fur, shadow aura, spectral claws forming.
 
-// Update UI function updateUI() { document.getElementById(“animal-name”).textContent = animal.name; document.getElementById(“animal-level”).textContent = animal.level; document.getElementById(“animal-xp”).textContent = animal.xp; document.getElementById(“animal-xp-needed”).textContent = animal.xpNeeded; document.getElementById(“animal-mood”).textContent = animal.mood; document.getElementById(“animal-energy”).textContent = animal.energy;
+Full‑body adult shadow‑panther on rune platform, strong shifting runes, arcane smoke, glowing eyes, forbidden grimoire energy.
 
-document.getElementById("animal-image").src =
-    `assets/images/spirit-${animal.stage}.png`; }
-// XP + Leveling function addXP(amount) { animal.xp += amount;
+Full‑body ascended shadow‑panther on ornate rune platform, intense shadow aura, floating runes, spectral claws, ancient forbidden magic.
 
-if (animal.xp >= animal.xpNeeded) {
-    animal.level++;
-    animal.xp = 0;
-    animal.xpNeeded = Math.floor(animal.xpNeeded * 1.4);
-    evolve();
-}
-
-saveAnimal();
-updateUI(); }
-// Evolution logic function evolve() { if (animal.level >= 1 && animal.level < 5) animal.stage = “baby”; if (animal.level >= 5 && animal.level < 10) animal.stage = “young”; if (animal.level >= 10 && animal.level < 20) animal.stage = “adult”; if (animal.level >= 20) animal.stage = “ascended”; }
-
-// Actions document.getElementById(“feed-btn”).addEventListener(“click”, () => { if (animal.energy < 100) animal.energy += 10; addXP(10); animal.mood = “Content”; saveAnimal(); updateUI(); });
-
-document.getElementById(“play-btn”).addEventListener(“click”, () => { if (animal.energy > 0) animal.energy -= 10; addXP(15); animal.mood = “Happy”; saveAnimal(); updateUI(); });
-
-document.getElementById(“rest-btn”).addEventListener(“click”, () => { animal.energy = 100; animal.mood = “Rested”; saveAnimal(); updateUI(); });
-
-[Uplo<!DOCTYPE html>
-
-[Uploadin g 2.0.txt…]() [Uploading .theme-grimoire { background: radial-gradient(circle at center, #2a0033, #0a0011); } 3.o.txt…]() [U
-Your Spirit Animal
-Spirit Animal
-Name: Unnamed
-
-Level: 1
-
-XP: 0 / 50
-
-Mood: Calm
-
-Energy: 100%
-
-Feed Play Rest
-ploading 2.1 Html spirit animals.txt…]() [Up#animal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; margin-top: 20px; } .animal-card { background: rgba(255,255,255,0.05); padding: 10px; border-radius: 10px; text-align: center; cursor: pointer; transition: 0.3s; } .animal-card:hover { transform: scale(1.1); filter: brightness(1.3); } .animal-card img { width: 80px; filter: drop-shadow(0 0 6px rgba(255,255,255,0.3)); } loading 3.2.txt…]() [Up// List of all species const speciesList = [ "wolf", "cat", "dragonling", "raven", "owl", "deer", "fox", "rabbit", "serpent", "shadow-panther" ]; // Load or create animal data let animals = JSON.parse(localStorage.getItem("spiritAnimals")) || {}; speciesList.forEach(species => { if (!animals[species]) { animals[species] = { species, level: 1, xp: 0, xpNeeded: 50, mood: "Calm", energy: 100, stage: "baby" }; } }); function saveAnimals() { localStorage.setItem("spiritAnimals", JSON.stringify(animals)); } // Build sanctuary grid const grid = document.getElementById("animal-grid"); speciesList.forEach(species => { const card = document.createElement("div"); card.className = "animal-card"; const img = document.createElement("img"); img.src = `assets/spirit-animals/${species}/baby.png`; const label = document.createElement("p"); label.textContent = species; card.appendChild(img); card.appendChild(label); card.addEventListener("click", () => selectAnimal(species)); grid.appendChild(card); }); // Active animal let active = null; function selectAnimal(species) { active = animals[species]; updateActiveUI(); } function updateActiveUI() { if (!active) return; document.getElementById("active-name").textContent = active.species; document.getElementById("active-level").textContent = active.level; document.getElementById("active-xp").textContent = active.xp; document.getElementById("active-mood").textContent = active.mood; document.getElementById("active-energy").textContent = active.energy; document.getElementById("active-image").src = `assets/spirit-animals/${active.species}/${active.stage}.png`; } // XP + Evolution function addXP(amount) { if (!active) return; active.xp += amount; if (active.xp >= active.xpNeeded) { active.level++; active.xp = 0; active.xpNeeded = Math.floor(active.xpNeeded * 1.4); evolve(active); } saveAnimals(); updateActiveUI(); } function evolve(animal) { if (animal.level < 5) animal.stage = "baby"; else if (animal.level < 10) animal.stage = "young"; else if (animal.level < 20) animal.stage = "adult"; else animal.stage = "ascended"; } // Buttons document.getElementById("feed-btn").addEventListener("click", () => { if (!active) return; active.energy = Math.min(100, active.energy + 10); active.mood = "Content"; addXP(10); }); document.getElementById("play-btn").addEventListener("click", () => { if (!active) return; active.energy = Math.max(0, active.energy - 10); active.mood = "Happy"; addXP(15); }); document.getElementById("rest-btn").addEventListener("click", () => { if (!active) return; active.energy = 100; active.mood = "Rested"; saveAnimals(); updateActiveUI(); }); loading 4.3.txt…]() [10.4 ascended panther.txt](https://github.com/user-attachments/files/24657683/10.4.ascended.panther.txt) [1.1 Baby wolf.txt](https://github.com/user-attachments/files/24657684/1.1.Baby.wolf.txt)[4.1 baby raven.txt](https://github.com/user-attachments/files/24657696/4.1.baby.raven.txt) [3.4 ascended dragon.txt](https://github.com/user-attachments/files/24657695/3.4.ascended.dragon.txt) [3.3 adult dragon.txt](https://github.com/user-attachments/files/24657694/3.3.adult.dragon.txt) [3.2 young dragon.txt](https://github.com/user-attachments/files/24657693/3.2.young.dragon.txt) [3.1 Baby Dragon.txt](https://github.com/user-attachments/files/24657692/3.1.Baby.Dragon.txt) [2.4 ascended cat.txt](https://github.com/user-attachments/files/24657691/2.4.ascended.cat.txt) [2.3 adult cat.txt](https://github.com/user-attachments/files/24657690/2.3.adult.cat.txt) [2.2 young cat.txt](https://github.com/user-attachments/files/24657689/2.2.young.cat.txt) [2.1 Baby cat.txt](https://github.com/user-attachments/files/24657688/2.1.Baby.cat.txt) [1.4 Ascended wolf.txt](https://github.com/user-attachments/files/24657687/1.4.Ascended.wolf.txt) [1.3 Adult wolf.txt](https://github.com/user-attachments/files/24657686/1.3.Adult.wolf.txt) [1.2Young wolf.txt](https://github.com/user-attachments/files/24657685/1.2Young.wolf.txt) /* Species-specific backgrounds */ .bg-wolf { background: radial-gradient(circle, #1a0022, #0a0011); } .bg-cat { background: radial-gradient(circle, #220022, #0a0011); } .bg-dragonling { background: radial-gradient(circle, #220033, #0a0011); } .bg-raven { background: radial-gradient(circle, #110022, #000000); } .bg-owl { background: radial-gradient(circle, #332255, #0a0011); } .bg-deer { background: radial-gradient(circle, #112211, #0a0011); } .bg-fox { background: radial-gradient(circle, #331122, #0a0011); } .bg-rabbit { background: radial-gradient(circle, #332244, #0a0011); } .bg-serpent { background: radial-gradient(circle, #000000, #111111); } .bg-shadow-panther { background: radial-gradient(circle, #000011, #000000); } [Uploading 4.4function updateActiveUI() { if (!active) return; const panel = document.getElementById("active-animal"); panel.className = `panel bg-${active.species}`; document.getElementById("active-name").textContent = active.species; document.getElementById("active-level").textContent = active.level; document.getElementById("active-xp").textContent = active.xp; document.getElementById("active-mood").textContent = active.mood; document.getElementById("active-energy").textContent = active.energy; document.getElementById("active-image").src = `assets/spirit-animals/${active.species}/${active.stage}.png`; } pet background.txt…]() @keyframes arcanePulse { 0% { filter: drop-shadow(0 0 2px #a066ff); } 50% { filter: drop-shadow(0 0 12px #d0aaff); } 100% { filter: drop-shadow(0 0 2px #a066ff); } } .loading-glow { animation: arcanePulse 2s infinite; } function selectAnimal(species) { active = animals[species]; const img = document.getElementById("active-image"); img.classList.add("loading-glow"); setTimeout(() => { img.classList.remove("loading-glow"); updateActiveUI(); }, 800); } [Uploading 3.5@keyframes summonBurst { 0% { transform: scale(0.5); opacity: 0; } 50% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(1); opacity: 1; } } .summon { animation: summonBurst 0.6s ease-out; } summoning pet style.txt…]() function evolve(animal) { if (animal.level < 5) animal.stage = "baby"; else if (animal.level < 10) animal.stage = "young"; else if (animal.level < 20) animal.stage = "adult"; else animal.stage = "ascended"; const img = document.getElementById("active-image"); img.classList.add("summon"); setTimeout(() => img.classList.remove("summon"), 600); }
-Select a Spirit Animal
-#species-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; margin-top: 20px; } .species-option { padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px; text-align: center; cursor: pointer; transition: 0.3s; } .species-option:hover { transform: scale(1.1); filter: brightness(1.3); } const speciesGrid = document.getElementById("species-grid"); speciesList.forEach(species => { const option = document.createElement("div"); option.className = "species-option"; const img = document.createElement("img"); img.src = `assets/spirit-animals/${species}/baby.png`; img.style.width = "100px"; const label = document.createElement("p"); label.textContent = species; option.appendChild(img); option.appendChild(label); option.addEventListener("click", () => selectAnimal(species)); speciesGrid.appendChild(option); }); [4.8 script.txt](https://github.com/user-attachments/files/24658022/4.8.script.txt) const unlockRules = { wolf: { moon: "full" }, cat: { xp: 100 }, dragonling: { ritual: "fire" }, raven: { moon: "new" }, owl: { xp: 200 }, deer: { ritual: "earth" }, fox: { xp: 150 }, rabbit: { moon: "waxing" }, serpent: { ritual: "shadow" }, "shadow-panther": { ritual: "forbidden" } }; [4.9.txt](https://github.com/user-attachments/files/24658025/4.9.txt) function isUnlocked(species) { const rule = unlockRules[species]; if (rule.moon && currentMoonPhase !== rule.moon) return false; if (rule.xp && totalXP < rule.xp) return false; if (rule.ritual && !completedRituals.includes(rule.ritual)) return false; return true; } [4.10.txt](https://github.com/user-attachments/files/24658028/4.10.txt) if (!isUnlocked(species)) { option.style.opacity = "0.3"; option.style.pointerEvents = "none"; } [Uploading
-Spirit Animal Quests
-Select a spirit animal to see quests.
-
-2.4 quest.txt…]() [3.7 quest.txt](https://github.com/user-attachments/files/24658039/3.7.quest.txt) #quest-list { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; } .quest { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; cursor: pointer; transition: 0.3s; } .quest:hover { transform: scale(1.03); filter: brightness(1.2); } .quest.completed { opacity: 0.4; text-decoration: line-through; } [Uploadingconst quests = { wolf: [ { id: "moon-howl", text: "Howl at the arcane moon to strengthen your bond.", xp: 20 }, { id: "track-shadows", text: "Track a shadow creature through the forest.", xp: 30 } ], cat: [ { id: "candle-watch", text: "Guard a flickering candle flame from spirits.", xp: 15 }, { id: "rune-pounce", text: "Pounce on moving runes in the ritual circle.", xp: 25 } ], dragonling: [ { id: "ember-spark", text: "Ignite a small ember with your breath.", xp: 20 }, { id: "wing-practice", text: "Practice wing flaps to strengthen flight.", xp: 30 } ], raven: [ { id: "deliver-message", text: "Carry a secret message across the night sky.", xp: 20 }, { id: "shadow-dive", text: "Dive through a shadow portal.", xp: 35 } ], owl: [ { id: "star-gaze", text: "Study constellations to gain wisdom.", xp: 25 }, { id: "silent-flight", text: "Fly silently through the arcane woods.", xp: 30 } ], deer: [ { id: "antler-glow", text: "Charge your antlers with druidic energy.", xp: 20 }, { id: "forest-path", text: "Guide lost spirits through the forest.", xp: 35 } ], fox: [ { id: "trick-light", text: "Create a playful illusion of light.", xp: 15 }, { id: "tail-flare", text: "Ignite your tail runes in a trickster dance.", xp: 25 } ], rabbit: [ { id: "moon-hop", text: "Leap through moonlit patches.", xp: 15 }, { id: "burrow-rune", text: "Dig up a buried rune stone.", xp: 30 } ], serpent: [ { id: "scale-shine", text: "Polish your runic scales to full glow.", xp: 20 }, { id: "shadow-slither", text: "Slither through a forbidden shadow path.", xp: 35 } ], "shadow-panther": [ { id: "void-step", text: "Step silently through the void.", xp: 40 }, { id: "rune-hunt", text: "Hunt a rogue rune spirit.", xp: 50 } ] }; 4.11 quest script.txt…]() [4.12.txt](https://github.com/user-attachments/files/24658051/4.12.txt) const questList = document.getElementById("quest-list"); const questActiveName = document.getElementById("quest-active-name"); function loadQuestsFor(species) { questList.innerHTML = ""; questActiveName.textContent = `${species} quests`; quests[species].forEach(q => { const div = document.createElement("div"); div.className = "quest"; if (animals[species].completedQuests?.includes(q.id)) { div.classList.add("completed"); } div.textContent = q.text; div.addEventListener("click", () => completeQuest(species, q)); questList.appendChild(div); }); } function completeQuest(species, quest) { if (!animals[species].completedQuests) { animals[species].completedQuests = []; } if (animals[species].completedQuests.includes(quest.id)) return; animals[species].completedQuests.push(quest.id); addXP(quest.xp); saveAnimals(); loadQuestsFor(species); // Summoning animation on quest completion const img = document.getElementById("active-image"); img.classList.add("summon"); setTimeout(() => img.classList.remove("summon"), 600); } [4.13.txt](https://github.com/user-attachments/files/24658054/4.13.txt) function selectAnimal(species) { active = animals[species]; updateActiveUI(); loadQuestsFor(species); } [4.14.txt](https://github.com/user-attachments/files/24658055/4.14.txt) function getDailyQuest(species) { const list = quests[species]; return list[Math.floor(Math.random() * list.length)]; } [4.15.txt](https://github.com/user-attachments/files/24658058/4.15.txt) if (quest.id === "void-step") { completedRituals.push("forbidden"); } [2.5 ritual circle.txt](https://github.com/user-attachments/files/24658070/2.5.ritual.circle.txt)
-Ritual Circle
-Select a ritual to begin.
-
-Perform Ritual
-[3.8 ritual circle.txt](https://github.com/user-attachments/files/24658075/3.8.ritual.circle.txt) #ritual-circle-visual { position: relative; width: 250px; height: 250px; margin: 30px auto; } .circle { position: absolute; width: 100%; height: 100%; border: 3px solid rgba(180, 80, 255, 0.4); border-radius: 50%; animation: slowRotate 20s linear infinite; } .rune-layer { position: absolute; width: 100%; height: 100%; background-image: url("assets/icons/runes.png"); background-size: contain; background-repeat: no-repeat; opacity: 0.4; animation: reverseRotate 25s linear infinite; } .glow-layer { position: absolute; width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 0 25px 10px rgba(180, 80, 255, 0.5); opacity: 0; transition: 0.6s ease; } @keyframes slowRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } } @keyframes reverseRotate { from { transform: rotate(360deg); } to { transform: rotate(0deg); } } /* Ritual List */ #ritual-list { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; } .ritual { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; cursor: pointer; transition: 0.3s; } .ritual:hover { transform: scale(1.03); filter: brightness(1.2); } .ritual.locked { opacity: 0.3; pointer-events: none; } [4.16 ritual circles.txt](https://github.com/user-attachments/files/24658080/4.16.ritual.circles.txt) const rituals = { fire: { name: "Fire Ritual", requirement: { xp: 100 }, unlocks: ["dragonling"], description: "Ignite the arcane flame to awaken fire‑aligned spirits." }, earth: { name: "Earth Ritual", requirement: { xp: 80 }, unlocks: ["deer"], description: "Channel druidic energy to awaken forest spirits." }, shadow: { name: "Shadow Ritual", requirement: { xp: 150 }, unlocks: ["serpent"], description: "Step into the void to awaken shadow‑aligned spirits." }, forbidden: { name: "Forbidden Ritual", requirement: { xp: 300 }, unlocks: ["shadow-panther"], description: "Invoke ancient forbidden magic to awaken a powerful familiar." } }; let completedRituals = JSON.parse(localStorage.getItem("completedRituals")) || []; [4.17.txt](https://github.com/user-attachments/files/24658086/4.17.txt) const ritualList = document.getElementById("ritual-list"); const ritualStatus = document.getElementById("ritual-status"); const performBtn = document.getElementById("perform-ritual-btn"); let selectedRitual = null; function loadRituals() { ritualList.innerHTML = ""; Object.keys(rituals).forEach(key => { const r = rituals[key]; const div = document.createElement("div"); div.className = "ritual"; if (completedRituals.includes(key)) { div.classList.add("locked"); } div.textContent = `${r.name} — ${r.description}`; div.addEventListener("click", () => selectRitual(key)); ritualList.appendChild(div); }); } function selectRitual(key) { selectedRitual = key; ritualStatus.textContent = `Selected: ${rituals[key].name}`; performBtn.disabled = false; } [4.18.txt](https://github.com/user-attachments/files/24658095/4.18.txt) performBtn.addEventListener("click", () => { if (!selectedRitual) return; const r = rituals[selectedRitual]; // Check XP requirement if (totalXP < r.requirement.xp) { ritualStatus.textContent = "Not enough XP to perform this ritual."; return; } // Perform ritual animation const glow = document.querySelector(".glow-layer"); glow.style.opacity = 1; setTimeout(() => { glow.style.opacity = 0; // Mark ritual as completed completedRituals.push(selectedRitual); localStorage.setItem("completedRituals", JSON.stringify(completedRituals)); ritualStatus.textContent = `${r.name} completed! New spirits unlocked.`; loadRituals(); }, 1500); }); [4.19.txt](https://github.com/user-attachments/files/24658097/4.19.txt) if (rule.ritual && !completedRituals.includes(rule.ritual)) return false; [4.20.txt](https://github.com/user-attachments/files/24658100/4.20.txt) loadRituals();
-.magic-particles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background-image: url("assets/effects/particles.gif");
-    opacity: 0.4;
-    mix-blend-mode: screen;
-}
-<div class="magic-particles"></div>
-.panel {
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 40px;
-    background: rgba(20, 0, 30, 0.6);
-    border: 2px solid rgba(180, 80, 255, 0.4);
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(180, 80, 255, 0.3);
-    backdrop-filter: blur(10px);
-    position: relative;
-}
-.panel::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url("assets/effects/runes.png") center/contain no-repeat;
-    opacity: 0.15;
-    animation: rotateRunes 40s linear infinite;
-}
-
-@keyframes rotateRunes {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-nav button, .actions button {
-    background: rgba(80, 0, 120, 0.6);
-    border: 1px solid rgba(200, 120, 255, 0.6);
-    color: #fff;
-    box-shadow: 0 0 10px rgba(200, 120, 255, 0.4);
-    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-}
-
-nav button:hover, .actions button:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 20px rgba(220, 160, 255, 0.8);
-}
-<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-h1, h2 {
-    font-family: "Cinzel Decorative", serif;
-}
-
-body {
-    font-family: "Uncial Antiqua", serif;
-}
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: radial-gradient(circle, transparent 60%, rgba(0,0,0,0.7));
-}
