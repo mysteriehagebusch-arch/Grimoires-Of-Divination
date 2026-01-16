@@ -1,0 +1,11 @@
+Grimoires-Of-Divination/
+│
+├── index.html
+├── styles.css
+├── script.js
+├── assets/
+│   ├── backgrounds/
+│   ├── effects/
+│   └── spirit-animals/
+│
+└── README.md
