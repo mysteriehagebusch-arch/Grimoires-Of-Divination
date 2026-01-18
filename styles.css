@@ -170,4 +170,26 @@ body.grimoire-open {
     }
 }
 
+/* Magical Cursor Trail */
+.trail {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    filter: blur(4px);
+    animation: fadeOut 0.8s linear forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.4);
+    }
+}
 
