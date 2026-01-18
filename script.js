@@ -1,3 +1,149 @@
+// ===============================
+//  FULL SAVE SYSTEM — CORE ENGINE
+// ===============================
+
+// Save any value forever
+function saveProgress(key, value) {
+    localStorage.setItem(key, JSON.stringify(value));
+}
+
+// Load saved value (or default if none)
+function loadProgress(key, defaultValue = null) {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : defaultValue;
+}
+
+// Delete all progress
+function resetProgress() {
+    localStorage.clear();
+}
+// ===============================
+//  USER PROFILE SYSTEM
+// ===============================
+
+// Save username
+function setUsername(name) {
+    saveProgress("username", name);
+}
+
+// Load username
+function getUsername() {
+    return loadProgress("username", null);
+}
+
+// Check if user is returning
+function isReturningUser() {
+    return loadProgress("hasVisited", false);
+}
+
+// Mark user as having visited
+function markVisited() {
+    saveProgress("hasVisited", true);
+}
+
+// ===============================
+//  SPIRIT ANIMAL SYSTEM
+// ===============================
+
+function setSpiritAnimal(animal) {
+    saveProgress("spiritAnimal", animal);
+}
+
+function getSpiritAnimal() {
+    return loadProgress("spiritAnimal", null);
+}
+
+function setEvolutionStage(stage) {
+    saveProgress("evolutionStage", stage);
+}
+
+function getEvolutionStage() {
+    return loadProgress("evolutionStage", 1);
+}
+
+// ===============================
+//  MOOD & ENERGY SYSTEM
+// ===============================
+
+function setMood(mood) {
+    saveProgress("mood", mood);
+}
+
+function getMood() {
+    return loadProgress("mood", "neutral");
+}
+
+function setEnergy(value) {
+    saveProgress("energy", value);
+}
+
+function getEnergy() {
+    return loadProgress("energy", 100);
+}
+
+// ===============================
+//  QUEST & RITUAL SYSTEM
+// ===============================
+
+function completeQuest(id) {
+    let quests = loadProgress("quests", []);
+    if (!quests.includes(id)) quests.push(id);
+    saveProgress("quests", quests);
+}
+
+function getCompletedQuests() {
+    return loadProgress("quests", []);
+}
+
+function completeRitual(id) {
+    let rituals = loadProgress("rituals", []);
+    if (!rituals.includes(id)) rituals.push(id);
+    saveProgress("rituals", rituals);
+}
+
+function getCompletedRituals() {
+    return loadProgress("rituals", []);
+}
+
+// ===============================
+//  THEME SYSTEM
+// ===============================
+
+function setTheme(theme) {
+    saveProgress("theme", theme);
+}
+
+function getTheme() {
+    return loadProgress("theme", "grimoire");
+}
+
+// ===============================
+//  AUTO-LOAD USER PROGRESS
+// ===============================
+
+window.addEventListener("load", () => {
+    // Skip login gate for returning users
+    if (isReturningUser()) {
+        const login = document.getElementById("login-gate");
+        if (login) login.remove();
+        const content = document.getElementById("site-content");
+        if (content) content.style.display = "block";
+    }
+
+    // Apply saved theme
+    const savedTheme = getTheme();
+    document.body.setAttribute("data-theme", savedTheme);
+
+    // Load spirit animal, evolution, mood, energy, etc.
+    const animal = getSpiritAnimal();
+    const stage = getEvolutionStage();
+    const mood = getMood();
+    const energy = getEnergy();
+
+    // You can now use these values to update the UI
+});
+
+
 // Dust Particles During Book Opening
 function spawnDust() {
     for (let i = 0; i < 12; i++) {
@@ -460,3 +606,19 @@ document.addEventListener("mousemove", (e) => {
         trail.remove();
     }, 800);
 });
+
+// Save data forever
+function saveProgress(key, value) {
+    localStorage.setItem(key, JSON.stringify(value));
+}
+
+// Load saved data
+function loadProgress(key, defaultValue = null) {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : defaultValue;
+}
+
+// Delete all progress
+function resetProgress() {
+    localStorage.clear();
+}
