@@ -1,3 +1,19 @@
+// Dust Particles During Book Opening
+function spawnDust() {
+    for (let i = 0; i < 12; i++) {
+        const d = document.createElement("div");
+        d.classList.add("dust");
+        d.style.left = (window.innerWidth / 2 - 100 + Math.random() * 200) + "px";
+        d.style.top = (window.innerHeight / 2 + 80 + Math.random() * 40) + "px";
+        d.style.animationDuration = (1.5 + Math.random()) + "s";
+        document.body.appendChild(d);
+        setTimeout(() => d.remove(), 2500);
+    }
+}
+
+setTimeout(spawnDust, 300); // triggers as book begins opening
+
+
 // Reveal site after book animation
 setTimeout(() => {
     document.getElementById("book-intro").style.opacity = "0";
