@@ -116,10 +116,16 @@ function getTheme() {
 --------------------------------------------------------- */
 
 window.addEventListener("load", () => {
+    // Apply saved theme (or default)
+    const savedTheme = getTheme();
+    document.body.classList.add(savedTheme);
+
+    // Fade-in effect
     setTimeout(() => {
         document.body.classList.add("grimoire-open");
     }, 200);
 });
+
 
 /* ---------------------------------------------------------
    8. DUST PARTICLES DURING BOOK OPENING
