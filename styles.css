@@ -129,3 +129,17 @@ nav button:hover {
 
 /* ---------------------------------------------------------
    SPIRIT ANIMAL SANCTUARY
+
+/* Grimoire Opening Animation */
+body {
+    opacity: 0;
+    transform: scale(0.98);
+    filter: blur(6px);
+    transition: opacity 1.2s ease, transform 1.2s ease, filter 1.2s ease;
+}
+
+body.grimoire-open {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
