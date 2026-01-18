@@ -143,3 +143,31 @@ body.grimoire-open {
     transform: scale(1);
     filter: blur(0);
 }
+/* Floating Arcane Sigils */
+.sigil {
+    position: fixed;
+    top: -10vh;
+    left: 50%;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.15);
+    pointer-events: none;
+    animation: drift 12s linear infinite;
+    filter: blur(1px);
+    user-select: none;
+}
+
+@keyframes drift {
+    0% {
+        transform: translateX(-50%) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateX(-50%) translateY(120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
