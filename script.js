@@ -277,3 +277,19 @@ document.addEventListener("mousemove", (e) => {
     document.body.appendChild(trail);
     setTimeout(() => trail.remove(), 800);
 });
+
+function setTheme(theme) {
+    // Remove any existing theme classes
+    document.body.classList.remove(
+        "theme-grimoire",
+        "theme-celestial",
+        "theme-druidic",
+        "theme-gothic"
+    );
+
+    // Add the new theme class
+    document.body.classList.add(theme);
+
+    // Persist choice
+    saveProgress("theme", theme);
+}
