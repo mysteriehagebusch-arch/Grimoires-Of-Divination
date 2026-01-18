@@ -13,6 +13,14 @@ function spawnDust() {
 
 setTimeout(spawnDust, 300); // triggers as book begins opening
 
+// Page Turn Sound
+function playPageSound() {
+    const s = document.getElementById("pageSound");
+    if (s) s.play();
+}
+
+setTimeout(playPageSound, 900);  // first page turn
+setTimeout(playPageSound, 1600); // second page turn
 
 // Reveal site after book animation
 setTimeout(() => {
