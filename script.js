@@ -169,7 +169,7 @@ setTimeout(() => {
             intro.remove();
         }, 600);
     }
-}, 2600);
+}, 5000);
 
 /* ---------------------------------------------------------
    11. LOGIN GATE LOGIC
@@ -182,7 +182,7 @@ setTimeout(() => {
     } else {
         document.getElementById("site-content").style.display = "block";
     }
-}, 2600);
+}, 5200);
 
 const terms = document.getElementById("agree-terms");
 const privacy = document.getElementById("agree-privacy");
