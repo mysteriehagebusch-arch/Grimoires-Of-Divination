@@ -54,6 +54,25 @@
     100% { transform: translate(-50%, -50%) rotateY(0deg); }
 }
 
+/* Dust Particles */
+.dust {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(1px);
+    animation: rise 2.5s linear forwards;
+    z-index: 99999;
+}
+
+@keyframes rise {
+    0% { opacity: 0; transform: translateY(20px) scale(0.5); }
+    20% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-120px) scale(1); }
+}
+
 
 /* ---------------------------------------------------------
    GLOBAL RESET + FONTS
