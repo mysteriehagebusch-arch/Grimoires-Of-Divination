@@ -11,6 +11,14 @@
 
 /* Book Cover */
 .book-cover {
+    perspective: 1200px;
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    transform: rotateY(0deg);
+    animation: openBook 2.2s ease forwards;
+}
+
+.book-cover {
     width: 420px;
     height: 600px;
     background: url('assets/backgrounds/grimoire-texture.png');
