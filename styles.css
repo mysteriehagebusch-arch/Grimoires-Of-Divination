@@ -105,6 +105,22 @@
     100% { opacity: 0; transform: translateY(-120px) scale(1); }
 }
 
+.page-turn-2 {
+    position: absolute;
+    width: 420px;
+    height: 600px;
+    background: #f5e6c8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: left center;
+    animation: turnPage2 1.8s ease 1.6s forwards;
+}
+
+@keyframes turnPage2 {
+    0% { transform: translate(-50%, -50%) rotateY(90deg); }
+    100% { transform: translate(-50%, -50%) rotateY(0deg); }
+}
 
 /* ---------------------------------------------------------
    GLOBAL RESET + FONTS
