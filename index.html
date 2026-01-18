@@ -1,186 +1,113 @@
-<div id="book-intro">
-    <div class="book-cover">
-        <div class="carving">✦ Ancient Grimoire ✦</div>
-    </div>
-    <div class="page-turn"></div>
-</div>
-<div class="page-turn-2"></div>
-
-<audio id="pageSound" src="assets/effects/page-turn.mp3"></audio>
-
-<div id="site-content" style="display:none;">
-    <!-- Your existing site content goes here -->
-</div>
-
-<div id="login-gate" style="display:none;">
-    <div class="login-box">
-        <h2>Enter the Grimoire</h2>
-
-        <p class="login-text">
-            Before you proceed, please acknowledge the sacred terms that protect this realm.
-        </p>
-
-        <label class="check">
-            <input type="checkbox" id="agree-terms">
-            I agree to the <a href="#" class="link">Terms of Use</a>
-        </label>
-
-        <label class="check">
-            <input type="checkbox" id="agree-privacy">
-            I agree to the <a href="#" class="link">Privacy Notice</a>
-        </label>
-
-        <button id="enter-btn" disabled>Enter the Grimoire</button>
-    </div>
-</div>
-
-<div id="site-content" style="display:none;">
-    <!-- Your real site content -->
-</div>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Grimoire of Divination</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimoires of Divination</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
 
-    <!-- Stylesheet -->
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Script -->
-    <script src="script.js" defer></script>
 </head>
 
-<body class="theme-grimoire">
+<body>
 
-    <div class="magic-particles"></div>
+    <!-- ---------------------------------------------------------
+         CINEMATIC INTRO — BOOK OPENING
+    --------------------------------------------------------- -->
+    <div id="book-intro">
+        <div class="book-cover">
+            <div class="carving">✦ Ancient Grimoire ✦</div>
+        </div>
 
-    <header>
-        <h1>Grimoire of Divination</h1>
-        <nav>
-            <button data-theme="grimoire">Grimoire</button>
-            <button data-theme="celestial">Celestial</button>
-            <button data-theme="druidic">Druidic</button>
-            <button data-theme="gothic">Gothic</button>
-        </nav>
-    </header>
+        <div class="page-turn"></div>
+        <div class="page-turn-2"></div>
+    </div>
 
-    <main>
+    <!-- Page Turn Sound -->
+    <audio id="pageSound" src="assets/effects/page-turn.mp3"></audio>
 
-        <!-- Spirit Sanctuary -->
-        <section id="spirit-sanctuary" class="panel">
+
+    <!-- ---------------------------------------------------------
+         LOGIN GATE (Terms + Privacy)
+    --------------------------------------------------------- -->
+    <div id="login-gate" style="display:none;">
+        <div class="login-box">
+            <h2>Enter the Grimoire</h2>
+
+            <p class="login-text">
+                Before entering this enchanted realm, please acknowledge the sacred terms.
+            </p>
+
+            <label class="check">
+                <input type="checkbox" id="agree-terms">
+                I agree to the <a href="#" class="link">Terms of Use</a>
+            </label>
+
+            <label class="check">
+                <input type="checkbox" id="agree-privacy">
+                I agree to the <a href="#" class="link">Privacy Notice</a>
+            </label>
+
+            <button id="enter-btn" disabled>Enter the Grimoire</button>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------------------------
+         MAIN SITE CONTENT (Hidden until login)
+    --------------------------------------------------------- -->
+    <div id="site-content" style="display:none;">
+
+        <!-- Magical Particles -->
+        <div class="magic-particles"></div>
+
+        <!-- Header -->
+        <header>
+            <h1>Grimoires of Divination</h1>
+            <nav>
+                <button onclick="setTheme('theme-grimoire')">Grimoire</button>
+                <button onclick="setTheme('theme-celestial')">Celestial</button>
+                <button onclick="setTheme('theme-druidic')">Druidic</button>
+                <button onclick="setTheme('theme-gothic')">Gothic</button>
+            </nav>
+        </header>
+
+        <!-- Main Panel -->
+        <div class="panel">
             <h2>Spirit Animal Sanctuary</h2>
-            <div id="animal-grid"></div>
-        </section>
+            <p>Welcome, traveler. Your journey begins here.</p>
+        </div>
 
-        <!-- Active Spirit Animal -->
-        <section id="active-animal" class="panel">
-            <h2 id="active-name">Select a Spirit Animal</h2>
-
-            <div class="animal-display">
-                <img id="active-image" src="" alt="">
-            </div>
-
-            <div class="stats">
-                <p><strong>Level:</strong> <span id="active-level">—</span></p>
-                <p><strong>XP:</strong> <span id="active-xp">—</span></p>
-                <p><strong>Mood:</strong> <span id="active-mood">—</span></p>
-                <p><strong>Energy:</strong> <span id="active-energy">—</span></p>
-            </div>
-
-            <div class="actions">
-                <button id="feed-btn">Feed</button>
-                <button id="play-btn">Play</button>
-                <button id="rest-btn">Rest</button>
-            </div>
-        </section>
-
-        <!-- Species Selection -->
-        <section id="species-select" class="panel">
-            <h2>Select a Spirit Animal</h2>
-            <div id="species-grid"></div>
-        </section>
-
+        <!-- Save / Erase Controls -->
         <div id="save-controls">
-    <button id="saveGameBtn">Save Game</button>
-    <button id="eraseRitualBtn">Erase Progress Ritual</button>
-</div>
+            <button id="saveGameBtn">Save Game</button>
+            <button id="eraseRitualBtn">Erase Progress Ritual</button>
+        </div>
 
-<!-- Ritual confirmation modal -->
-<div id="erase-modal" style="display:none;">
-    <div class="erase-box">
-        <h3>Ritual of Forgetting</h3>
-        <p>This ritual will erase all progress.  
-        Are you certain you wish to proceed?</p>
-
-        <button id="confirmErase">Yes, perform the ritual</button>
-        <button id="cancelErase">Cancel</button>
     </div>
-</div>
 
-        
-        <!-- Quest Board -->
-        <section id="quest-board" class="panel">
-            <h2>Spirit Animal Quests</h2>
-            <p id="quest-active-name">Select a spirit animal to see quests.</p>
-            <div id="quest-list"></div>
-        </section>
 
-<div id="save-controls">
-    <button id="saveGameBtn">Save Game</button>
-    <button id="eraseRitualBtn">Erase Progress Ritual</button>
-</div>
+    <!-- ---------------------------------------------------------
+         ERASE PROGRESS RITUAL MODAL
+    --------------------------------------------------------- -->
+    <div id="erase-modal" style="display:none;">
+        <div class="erase-box">
+            <h3>Ritual of Forgetting</h3>
+            <p>This ritual will erase all progress. Are you certain?</p>
 
-<!-- Ritual confirmation modal -->
-<div id="erase-modal" style="display:none;">
-    <div class="erase-box">
-        <h3>Ritual of Forgetting</h3>
-        <p>This ritual will erase all progress.  
-        Are you certain you wish to proceed?</p>
-
-        <button id="confirmErase">Yes, perform the ritual</button>
-        <button id="cancelErase">Cancel</button>
+            <button id="confirmErase">Yes, perform the ritual</button>
+            <button id="cancelErase">Cancel</button>
+        </div>
     </div>
-</div>
-        
-        <!-- Ritual Circle -->
-        <section id="ritual-circle" class="panel">
-            <h2>Ritual Circle</h2>
-            <p id="ritual-status">Select a ritual to begin.</p>
 
-            <div id="ritual-list"></div>
 
-            <div id="ritual-circle-visual">
-                <div class="circle"></div>
-                <div class="rune-layer"></div>
-                <div class="glow-layer"></div>
-            </div>
-
-            <button id="perform-ritual-btn" disabled>Perform Ritual</button>
-        </section>
-<div id="save-controls">
-    <button id="saveGameBtn">Save Game</button>
-    <button id="eraseRitualBtn">Erase Progress Ritual</button>
-</div>
-
-<!-- Ritual confirmation modal -->
-<div id="erase-modal" style="display:none;">
-    <div class="erase-box">
-        <h3>Ritual of Forgetting</h3>
-        <p>This ritual will erase all progress.  
-        Are you certain you wish to proceed?</p>
-
-        <button id="confirmErase">Yes, perform the ritual</button>
-        <button id="cancelErase">Cancel</button>
-    </div>
-</div>
-
-    </main>
+    <!-- ---------------------------------------------------------
+         SCRIPTS
+    --------------------------------------------------------- -->
+    <script src="script.js"></script>
 
 </body>
 </html>
-
-<meta name="theme-color" content="#1a0f0f">
