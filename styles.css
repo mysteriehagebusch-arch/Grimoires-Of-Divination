@@ -251,7 +251,7 @@ body {
     opacity: 0;
     transform: scale(0.98);
     filter: blur(6px);
-    transition: opacity 1.2s ease, transform 1.2s ease, filter 1.2s ease;
+    transition: opacity 5s ease, transform 5s ease, filter 5s ease;
 }
 
 body.grimoire-open {
