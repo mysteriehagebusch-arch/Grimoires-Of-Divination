@@ -428,3 +428,35 @@ body.grimoire-open {
     }
 }
 
+// Show login gate after book intro
+setTimeout(() => {
+    const login = document.getElementById("login-gate");
+    if (login) login.style.display = "flex";
+}, 2600);
+
+// Enable button only when both boxes checked
+const terms = document.getElementById("agree-terms");
+const privacy = document.getElementById("agree-privacy");
+const enterBtn = document.getElementById("enter-btn");
+
+function updateButton() {
+    if (terms.checked && privacy.checked) {
+        enterBtn.classList.add("enabled");
+        enterBtn.disabled = false;
+    } else {
+        enterBtn.classList.remove("enabled");
+        enterBtn.disabled = true;
+    }
+}
+
+terms.addEventListener("change", updateButton);
+privacy.addEventListener("change", updateButton);
+
+// Enter the site
+enterBtn.addEventListener("click", () => {
+    document.getElementById("login-gate").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("login-gate").remove();
+        document.getElementById("site-content").style.display = "block";
+    }, 600);
+});
