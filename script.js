@@ -387,3 +387,10 @@ performBtn.addEventListener("click", () => {
    INITIALIZE SYSTEMS
 --------------------------------------------------------- */
 loadRituals();
+
+// Grimoire Opening Animation
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.body.classList.add("grimoire-open");
+    }, 200); // slight delay for dramatic effect
+});
