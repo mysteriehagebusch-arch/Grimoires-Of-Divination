@@ -394,3 +394,22 @@ window.addEventListener("load", () => {
         document.body.classList.add("grimoire-open");
     }, 200); // slight delay for dramatic effect
 });
+
+// Floating Arcane Sigils
+const sigils = ["✦", "✧", "❂", "☽", "☾", "✴", "✹", "✺"];
+
+function spawnSigil() {
+    const sigil = document.createElement("div");
+    sigil.classList.add("sigil");
+    sigil.textContent = sigils[Math.floor(Math.random() * sigils.length)];
+
+    sigil.style.left = Math.random() * 100 + "vw";
+    sigil.style.fontSize = (Math.random() * 2 + 1.5) + "rem";
+    sigil.style.animationDuration = (Math.random() * 6 + 10) + "s";
+
+    document.body.appendChild(sigil);
+
+    setTimeout(() => sigil.remove(), 15000);
+}
+
+setInterval(spawnSigil, 2000);
