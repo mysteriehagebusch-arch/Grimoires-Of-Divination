@@ -1,3 +1,59 @@
+/* Intro Container */
+#book-intro {
+    position: fixed;
+    inset: 0;
+    background: #0d0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Book Cover */
+.book-cover {
+    width: 420px;
+    height: 600px;
+    background: url('assets/backgrounds/grimoire-texture.png');
+    background-size: cover;
+    border: 6px solid #3b2a1a;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    transform-origin: left center;
+    animation: openBook 2.2s ease forwards;
+}
+
+.carving {
+    font-family: serif;
+    font-size: 2rem;
+    color: rgba(255, 230, 180, 0.8);
+    text-shadow: 0 0 10px rgba(255, 200, 120, 0.5);
+    text-align: center;
+    margin-top: 260px;
+}
+
+/* Page Turn Layer */
+.page-turn {
+    position: absolute;
+    width: 420px;
+    height: 600px;
+    background: #f5e6c8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: left center;
+    animation: turnPage 1.8s ease 1s forwards;
+}
+
+/* Animations */
+@keyframes openBook {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(-100deg); }
+}
+
+@keyframes turnPage {
+    0% { transform: translate(-50%, -50%) rotateY(90deg); }
+    100% { transform: translate(-50%, -50%) rotateY(0deg); }
+}
+
 /* ---------------------------------------------------------
    THEME SWITCHING
 --------------------------------------------------------- */
