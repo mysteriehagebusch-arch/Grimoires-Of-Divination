@@ -1,3 +1,13 @@
+// Reveal site after book animation
+setTimeout(() => {
+    document.getElementById("book-intro").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("book-intro").remove();
+        document.getElementById("site-content").style.display = "block";
+    }, 600);
+}, 2600); // matches animation duration
+
+
 /* Intro Container */
 #book-intro {
     position: fixed;
