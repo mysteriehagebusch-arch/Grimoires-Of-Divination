@@ -1,3 +1,7 @@
+/* ---------------------------------------------------------
+   INTRO CINEMATIC — BOOK OPENING
+--------------------------------------------------------- */
+
 /* Intro Container */
 #book-intro {
     position: fixed;
@@ -17,16 +21,14 @@
     background-size: cover;
     border: 6px solid #3b2a1a;
     box-shadow: 0 0 40px rgba(0,0,0,0.8);
-
-    /* 3D + animation */
     perspective: 1200px;
     transform-style: preserve-3d;
     transform-origin: left center;
     animation: openBook 2.2s ease forwards;
-
     position: relative;
 }
 
+/* Glowing Rune */
 .book-cover::after {
     content: "✦";
     position: absolute;
@@ -46,6 +48,7 @@
     100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
 }
 
+/* Carved Text */
 .carving {
     font-family: serif;
     font-size: 2rem;
@@ -55,8 +58,9 @@
     margin-top: 260px;
 }
 
-/* Page Turn Layer */
-.page-turn {
+/* Page Turns */
+.page-turn,
+.page-turn-2 {
     position: absolute;
     width: 420px;
     height: 600px;
@@ -65,16 +69,28 @@
     left: 50%;
     transform: translate(-50%, -50%) rotateY(90deg);
     transform-origin: left center;
+}
+
+.page-turn {
     animation: turnPage 1.8s ease 1s forwards;
 }
 
-/* Animations */
+.page-turn-2 {
+    animation: turnPage2 1.8s ease 1.6s forwards;
+}
+
+/* Book Opening Animation */
 @keyframes openBook {
     0% { transform: rotateY(0deg); }
     100% { transform: rotateY(-100deg); }
 }
 
 @keyframes turnPage {
+    0% { transform: translate(-50%, -50%) rotateY(90deg); }
+    100% { transform: translate(-50%, -50%) rotateY(0deg); }
+}
+
+@keyframes turnPage2 {
     0% { transform: translate(-50%, -50%) rotateY(90deg); }
     100% { transform: translate(-50%, -50%) rotateY(0deg); }
 }
@@ -98,26 +114,10 @@
     100% { opacity: 0; transform: translateY(-120px) scale(1); }
 }
 
-.page-turn-2 {
-    position: absolute;
-    width: 420px;
-    height: 600px;
-    background: #f5e6c8;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateY(90deg);
-    transform-origin: left center;
-    animation: turnPage2 1.8s ease 1.6s forwards;
-}
-
-@keyframes turnPage2 {
-    0% { transform: translate(-50%, -50%) rotateY(90deg); }
-    100% { transform: translate(-50%, -50%) rotateY(0deg); }
-}
-
 /* ---------------------------------------------------------
    GLOBAL RESET + FONTS
 --------------------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -136,7 +136,6 @@ body {
    THEMES
 --------------------------------------------------------- */
 
-/* A — Dark Mystical Grimoire */
 .theme-grimoire {
     background:
         url("assets/backgrounds/grimoire-texture.png"),
@@ -145,7 +144,6 @@ body {
     background-blend-mode: overlay;
 }
 
-/* B — Soft Celestial Witchcore */
 .theme-celestial {
     background:
         url("assets/backgrounds/celestial.png"),
@@ -153,14 +151,12 @@ body {
     color: #222;
 }
 
-/* C — Forest Druidic Magic */
 .theme-druidic {
     background:
         url("assets/backgrounds/druidic.png"),
         linear-gradient(180deg, #0f3d1e, #1a5e2a, #0b2412);
 }
 
-/* D — Gothic Occult */
 .theme-gothic {
     background:
         url("assets/backgrounds/gothic.png"),
@@ -170,6 +166,7 @@ body {
 /* ---------------------------------------------------------
    HEADER + NAV
 --------------------------------------------------------- */
+
 header {
     text-align: center;
     padding: 20px;
@@ -199,6 +196,7 @@ nav button:hover {
 /* ---------------------------------------------------------
    MAGICAL PARTICLES
 --------------------------------------------------------- */
+
 .magic-particles {
     position: fixed;
     top: 0;
@@ -215,6 +213,7 @@ nav button:hover {
 /* ---------------------------------------------------------
    PANELS
 --------------------------------------------------------- */
+
 .panel {
     max-width: 700px;
     margin: 60px auto;
@@ -228,7 +227,6 @@ nav button:hover {
     z-index: 2;
 }
 
-/* Animated runes behind panels */
 .panel::before {
     content: "";
     position: absolute;
@@ -245,9 +243,10 @@ nav button:hover {
 }
 
 /* ---------------------------------------------------------
-   SPIRIT ANIMAL SANCTUARY
+   SPIRIT ANIMAL SANCTUARY + EFFECTS
+--------------------------------------------------------- */
 
-/* Grimoire Opening Animation */
+/* Fade-in after intro */
 body {
     opacity: 0;
     transform: scale(0.98);
@@ -260,6 +259,7 @@ body.grimoire-open {
     transform: scale(1);
     filter: blur(0);
 }
+
 /* Floating Arcane Sigils */
 .sigil {
     position: fixed;
@@ -274,17 +274,9 @@ body.grimoire-open {
 }
 
 @keyframes drift {
-    0% {
-        transform: translateX(-50%) translateY(0) rotate(0deg);
-        opacity: 0;
-    }
-    20% {
-        opacity: 0.4;
-    }
-    100% {
-        transform: translateX(-50%) translateY(120vh) rotate(360deg);
-        opacity: 0;
-    }
+    0% { transform: translateX(-50%) translateY(0) rotate(0deg); opacity: 0; }
+    20% { opacity: 0.4; }
+    100% { transform: translateX(-50%) translateY(120vh) rotate(360deg); opacity: 0; }
 }
 
 /* Magical Cursor Trail */
@@ -299,31 +291,7 @@ body.grimoire-open {
     animation: fadeOut 0.8s linear forwards;
 }
 
-/* Dust Particles */
-.dust {
-    position: fixed;
-    width: 4px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(1px);
-    animation: rise 2.5s linear forwards;
-    z-index: 99999;
-}
-
-@keyframes rise {
-    0% { opacity: 0; transform: translateY(20px) scale(0.5); }
-    20% { opacity: 1; }
-    100% { opacity: 0; transform: translateY(-120px) scale(1); }
-}
-
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-        transform: scale(1);
-    }
-    to {
-        opacity: 0;
-        transform: scale(0.4);
-    }
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.4); }
+}
