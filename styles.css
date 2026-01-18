@@ -460,3 +460,52 @@ enterBtn.addEventListener("click", () => {
         document.getElementById("site-content").style.display = "block";
     }, 600);
 });
+
+        /* Save Controls */
+#save-controls {
+    margin: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+#saveGameBtn, #eraseRitualBtn {
+    padding: 10px 20px;
+    background: #c9a46a;
+    border: none;
+    color: #1a1410;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#saveGameBtn:hover, #eraseRitualBtn:hover {
+    background: #e8cfa0;
+}
+
+/* Ritual Modal */
+#erase-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.erase-box {
+    background: #1a1410;
+    padding: 25px;
+    border: 2px solid #c9a46a;
+    box-shadow: 0 0 20px rgba(255, 220, 150, 0.4);
+    width: 350px;
+    text-align: center;
+    border-radius: 8px;
+    animation: ritualGlow 2s infinite alternate;
+}
+
+@keyframes ritualGlow {
+    from { box-shadow: 0 0 10px rgba(255, 200, 120, 0.3); }
+    to { box-shadow: 0 0 25px rgba(255, 200, 120, 0.7); }
+}
