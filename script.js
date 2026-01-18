@@ -622,3 +622,52 @@ function loadProgress(key, defaultValue = null) {
 function resetProgress() {
     localStorage.clear();
 }
+
+// ===============================
+// SAVE GAME BUTTON
+// ===============================
+
+document.getElementById("saveGameBtn").addEventListener("click", () => {
+    // Save everything important
+    saveProgress("spiritAnimal", getSpiritAnimal());
+    saveProgress("evolutionStage", getEvolutionStage());
+    saveProgress("mood", getMood());
+    saveProgress("energy", getEnergy());
+    saveProgress("quests", getCompletedQuests());
+    saveProgress("rituals", getCompletedRituals());
+    saveProgress("theme", getTheme());
+    saveProgress("username", getUsername());
+    saveProgress("hasVisited", true);
+
+    alert("✨ Your progress has been saved to the Grimoire.");
+});
+
+// ===============================
+// ERASE PROGRESS RITUAL
+// ===============================
+
+const eraseModal = document.getElementById("erase-modal");
+const eraseBtn = document.getElementById("eraseRitualBtn");
+const confirmErase = document.getElementById("confirmErase");
+const cancelErase = document.getElementById("cancelErase");
+
+// Open ritual modal
+eraseBtn.addEventListener("click", () => {
+    eraseModal.style.display = "flex";
+});
+
+// Cancel ritual
+cancelErase.addEventListener("click", () => {
+    eraseModal.style.display = "none";
+});
+
+// Perform ritual
+confirmErase.addEventListener("click", () => {
+    resetProgress(); // wipes everything
+    eraseModal.style.display = "none";
+
+    alert("🜂 The Ritual of Forgetting is complete. All progress has been erased.");
+
+    // Reload site to start fresh
+    location.reload();
+});
