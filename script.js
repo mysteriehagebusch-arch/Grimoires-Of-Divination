@@ -7,11 +7,6 @@ setTimeout(() => {
     }, 600);
 }, 2600); // matches animation duration
 
-@keyframes turnPage {
-    0% { transform: translate(-50%, -50%) rotateY(90deg); }
-    100% { transform: translate(-50%, -50%) rotateY(0deg); }
-}
-
 /* ---------------------------------------------------------
    THEME SWITCHING
 --------------------------------------------------------- */
