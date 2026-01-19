@@ -172,7 +172,7 @@ setTimeout(() => {
         intro.style.opacity = "0";
         setTimeout(() => intro.remove(), 600);
     }
-}, 90000);
+}, 90000); // 90 seconds
 
 /* ---------------------------------------------------------
    11. LOGIN GATE LOGIC
@@ -180,8 +180,7 @@ setTimeout(() => {
 
 setTimeout(() => {
     if (!isReturningUser()) {
-        const login = document.getElementById("login-gate");
-        if (login) login.style.display = "flex";
+        document.getElementById("login-gate").style.display = "flex";
     } else {
         document.getElementById("site-content").style.display = "block";
     }
