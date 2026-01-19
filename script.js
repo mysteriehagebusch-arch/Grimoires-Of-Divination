@@ -145,6 +145,20 @@ function spawnDust() {
 
 setTimeout(spawnDust, 300);
 
+function spawnDust() {
+    for (let i = 0; i < 20; i++) {
+        const d = document.createElement("div");
+        d.classList.add("dust");
+        d.style.left = (window.innerWidth / 2 - 100 + Math.random() * 200) + "px";
+        d.style.top = (window.innerHeight / 2 + 80 + Math.random() * 40) + "px";
+        d.style.animationDuration = (2 + Math.random()) + "s";
+        document.body.appendChild(d);
+        setTimeout(() => d.remove(), 3000);
+    }
+}
+setInterval(spawnDust, 1000); // keep spawning for full intro
+
+
 /* ---------------------------------------------------------
    9. PAGE TURN SOUND
 --------------------------------------------------------- */
