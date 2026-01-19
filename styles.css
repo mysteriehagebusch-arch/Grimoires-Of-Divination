@@ -24,7 +24,8 @@
     perspective: 1200px;
     transform-style: preserve-3d;
     transform-origin: left center;
-    animation: openBook 30s ease 30s forwards;
+    /* 15s delay, 5s opening */
+    animation: openBook 5s ease 15s forwards;
     position: relative;
 }
 
