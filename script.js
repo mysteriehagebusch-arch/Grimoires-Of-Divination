@@ -179,16 +179,13 @@ setTimeout(() => {
     const intro = document.getElementById("book-intro");
     if (intro) {
         intro.style.opacity = "0";
-        setTimeout(() => {
-            intro.remove();
-        }, 600);
+        setTimeout(() => intro.remove(), 600);
     }
-}, 8000);
+}, 90000); // 90 seconds
 
 /* ---------------------------------------------------------
    11. LOGIN GATE LOGIC
 --------------------------------------------------------- */
-
 setTimeout(() => {
     if (!isReturningUser()) {
         const login = document.getElementById("login-gate");
@@ -196,7 +193,7 @@ setTimeout(() => {
     } else {
         document.getElementById("site-content").style.display = "block";
     }
-}, 9000);
+}, 90600);
 
 const terms = document.getElementById("agree-terms");
 const privacy = document.getElementById("agree-privacy");
