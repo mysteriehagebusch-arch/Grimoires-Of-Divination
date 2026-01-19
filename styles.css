@@ -39,7 +39,7 @@
     color: rgba(255, 220, 150, 0.7);
     text-shadow: 0 0 12px rgba(255, 200, 120, 0.9),
                  0 0 24px rgba(255, 200, 120, 0.6);
-    animation: runePulse 5s ease-in-out infinite;
+    animation: runePulse 35s ease-in-out infinite;
 }
 
 @keyframes runePulse {
@@ -72,11 +72,11 @@
 }
 
 .page-turn {
-    animation: turnPage 3.3s ease 3s forwards;
+    animation: turnPage 35s ease 35s forwards;
 }
 
 .page-turn-2 {
-    animation: turnPage2 2.2s ease 3.2s forwards;
+    animation: turnPage2 35s ease 35s forwards;
 }
 
 /* Book Opening Animation */
