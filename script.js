@@ -172,7 +172,7 @@ setTimeout(() => {
         intro.style.opacity = "0";
         setTimeout(() => intro.remove(), 600);
     }
-}, 125000); // 120s delay + 5s animation
+}, 125000); // 120s delay + 120s animation 
 
 /* ---------------------------------------------------------
    11. LOGIN GATE LOGIC
