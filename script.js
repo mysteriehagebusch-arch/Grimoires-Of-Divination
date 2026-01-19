@@ -182,7 +182,7 @@ setTimeout(() => {
     } else {
         document.getElementById("site-content").style.display = "block";
     }
-}, 5200);
+}, 9000);
 
 const terms = document.getElementById("agree-terms");
 const privacy = document.getElementById("agree-privacy");
