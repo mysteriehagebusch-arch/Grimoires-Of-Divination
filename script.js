@@ -166,13 +166,17 @@ setTimeout(playPageSound, 1600);
    10. REVEAL SITE AFTER INTRO
 --------------------------------------------------------- */
 
+/* ---------------------------------------------------------
+   10. REVEAL SITE AFTER INTRO
+--------------------------------------------------------- */
+
 setTimeout(() => {
     const intro = document.getElementById("book-intro");
     if (intro) {
         intro.style.opacity = "0";
         setTimeout(() => intro.remove(), 600);
     }
-}, 125000); // 30s delay + 30s animation + 5s opening after 120s
+}, 20000); // 15s closed + 5s opening
 
 /* ---------------------------------------------------------
    11. LOGIN GATE LOGIC
@@ -184,7 +188,7 @@ setTimeout(() => {
     } else {
         document.getElementById("site-content").style.display = "block";
     }
-}, 125600);
+}, 20600);
 
 const terms = document.getElementById("agree-terms");
 const privacy = document.getElementById("agree-privacy");
