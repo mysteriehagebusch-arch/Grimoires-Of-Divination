@@ -172,7 +172,7 @@ setTimeout(() => {
         intro.style.opacity = "0";
         setTimeout(() => intro.remove(), 600);
     }
-}, 90000); // 90 seconds
+}, 125000); // 120s delay + 5s animation
 
 /* ---------------------------------------------------------
    11. LOGIN GATE LOGIC
@@ -184,7 +184,7 @@ setTimeout(() => {
     } else {
         document.getElementById("site-content").style.display = "block";
     }
-}, 90600);
+}, 125600);
 
 const terms = document.getElementById("agree-terms");
 const privacy = document.getElementById("agree-privacy");
