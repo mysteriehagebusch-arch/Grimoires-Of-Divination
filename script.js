@@ -104,6 +104,14 @@ function getCompletedRituals() {
 --------------------------------------------------------- */
 
 function setTheme(theme) {
+    document.body.classList.remove(
+        "theme-grimoire",
+        "theme-celestial",
+        "theme-druidic",
+        "theme-gothic"
+    );
+
+    document.body.classList.add(theme);
     saveProgress("theme", theme);
 }
 
@@ -116,34 +124,17 @@ function getTheme() {
 --------------------------------------------------------- */
 
 window.addEventListener("load", () => {
-    // Apply saved theme (or default)
     const savedTheme = getTheme();
     document.body.classList.add(savedTheme);
 
-    // Fade-in effect
     setTimeout(() => {
         document.body.classList.add("grimoire-open");
     }, 200);
 });
 
-
 /* ---------------------------------------------------------
    8. DUST PARTICLES DURING BOOK OPENING
 --------------------------------------------------------- */
-
-function spawnDust() {
-    for (let i = 0; i < 12; i++) {
-        const d = document.createElement("div");
-        d.classList.add("dust");
-        d.style.left = (window.innerWidth / 2 - 100 + Math.random() * 200) + "px";
-        d.style.top = (window.innerHeight / 2 + 80 + Math.random() * 40) + "px";
-        d.style.animationDuration = (1.5 + Math.random()) + "s";
-        document.body.appendChild(d);
-        setTimeout(() => d.remove(), 2500);
-    }
-}
-
-setTimeout(spawnDust, 300);
 
 function spawnDust() {
     for (let i = 0; i < 20; i++) {
@@ -156,8 +147,8 @@ function spawnDust() {
         setTimeout(() => d.remove(), 3000);
     }
 }
-setInterval(spawnDust, 1000); // keep spawning for full intro
 
+setInterval(spawnDust, 1000);
 
 /* ---------------------------------------------------------
    9. PAGE TURN SOUND
@@ -181,11 +172,12 @@ setTimeout(() => {
         intro.style.opacity = "0";
         setTimeout(() => intro.remove(), 600);
     }
-}, 90000); // 90 seconds
+}, 90000);
 
 /* ---------------------------------------------------------
    11. LOGIN GATE LOGIC
 --------------------------------------------------------- */
+
 setTimeout(() => {
     if (!isReturningUser()) {
         const login = document.getElementById("login-gate");
@@ -294,19 +286,3 @@ document.addEventListener("mousemove", (e) => {
     document.body.appendChild(trail);
     setTimeout(() => trail.remove(), 800);
 });
-
-function setTheme(theme) {
-    // Remove any existing theme classes
-    document.body.classList.remove(
-        "theme-grimoire",
-        "theme-celestial",
-        "theme-druidic",
-        "theme-gothic"
-    );
-
-    // Add the new theme class
-    document.body.classList.add(theme);
-
-    // Persist choice
-    saveProgress("theme", theme);
-}
