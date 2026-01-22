@@ -289,3 +289,184 @@ document.addEventListener("mousemove", (e) => {
     document.body.appendChild(trail);
     setTimeout(() => trail.remove(), 800);
 });
+
+/* ---------------------------------------------------------
+   SANCTUARY LOGIC
+--------------------------------------------------------- */
+
+const usernameInput = document.getElementById("username-input");
+const saveNameBtn = document.getElementById("saveNameBtn");
+const currentSpiritLabel = document.getElementById("current-spirit");
+const spiritImage = document.getElementById("spirit-image");
+const spiritPlaceholder = document.getElementById("spirit-placeholder");
+const evolutionLabel = document.getElementById("evolution-label");
+const evolveBtn = document.getElementById("evolveBtn");
+const moodLabel = document.getElementById("mood-label");
+const energyBar = document.getElementById("energy-bar");
+const energyLabel = document.getElementById("energy-label");
+
+const spiritButtons = document.querySelectorAll(".spirit-choice");
+const moodButtons = document.querySelectorAll(".status-block button[data-mood]");
+const restBtn = document.getElementById("restBtn");
+const ritualCostBtn = document.getElementById("ritualCostBtn");
+const questButtons = document.querySelectorAll(".quest-complete");
+const ritualButtons = document.querySelectorAll(".ritual-complete");
+
+// Map spirit → image path
+const spiritImages = {
+    wolf: "assets/creatures/wolf-stage1.png",
+    owl: "assets/creatures/owl-stage1.png",
+    stag: "assets/creatures/stag-stage1.png",
+    serpent: "assets/creatures/serpent-stage1.png",
+    fox: "assets/creatures/fox-stage1.png"
+};
+
+// Evolution labels
+const evolutionStages = [
+    "Unawakened",
+    "Awakened",
+    "Bonded",
+    "Ascended"
+];
+
+// Initialize sanctuary from saved data
+function initSanctuary() {
+    const savedName = getUsername();
+    if (savedName && usernameInput) {
+        usernameInput.value = savedName;
+    }
+
+    const spirit = getSpiritAnimal();
+    const stage = getEvolutionStage();
+    const mood = getMood();
+    const energy = getEnergy();
+
+    if (spirit && currentSpiritLabel) {
+        currentSpiritLabel.textContent = formatSpiritName(spirit);
+        updateSpiritImage(spirit, stage);
+    }
+
+    if (evolutionLabel) {
+        evolutionLabel.textContent = evolutionStages[stage] || evolutionStages[0];
+    }
+
+    if (moodLabel) {
+        moodLabel.textContent = mood;
+    }
+
+    updateEnergyUI(energy);
+}
+
+function formatSpiritName(key) {
+    switch (key) {
+        case "wolf": return "Lunar Wolf";
+        case "owl": return "Oracle Owl";
+        case "stag": return "Verdant Stag";
+        case "serpent": return "Astral Serpent";
+        case "fox": return "Ember Fox";
+        default: return "Unknown Spirit";
+    }
+}
+
+function updateSpiritImage(spirit, stage) {
+    if (!spiritImage || !spiritPlaceholder) return;
+
+    const basePath = `assets/creatures/${spirit}-stage${stage}.png`;
+    spiritImage.src = basePath;
+    spiritImage.style.display = "block";
+    spiritPlaceholder.style.display = "none";
+}
+
+function updateEnergyUI(value) {
+    const clamped = Math.max(0, Math.min(100, value));
+    setEnergy(clamped);
+    if (energyBar) energyBar.style.width = clamped + "%";
+    if (energyLabel) energyLabel.textContent = clamped;
+}
+
+// Name saving
+saveNameBtn?.addEventListener("click", () => {
+    const name = usernameInput.value.trim();
+    if (!name) return;
+    setUsername(name);
+    alert(`✨ The Grimoire now knows you as ${name}.`);
+});
+
+// Spirit selection
+spiritButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const animal = btn.getAttribute("data-animal");
+        if (!animal) return;
+        setSpiritAnimal(animal);
+        setEvolutionStage(1);
+        currentSpiritLabel.textContent = formatSpiritName(animal);
+        evolutionLabel.textContent = evolutionStages[1];
+        updateSpiritImage(animal, 1);
+        completeQuest("q1");
+        alert(`A pact is sealed with the ${formatSpiritName(animal)}.`);
+    });
+});
+
+// Evolution
+evolveBtn?.addEventListener("click", () => {
+    let stage = getEvolutionStage();
+    if (stage >= evolutionStages.length - 1) {
+        alert("Your spirit has reached its highest form.");
+        return;
+    }
+    stage++;
+    setEvolutionStage(stage);
+    evolutionLabel.textContent = evolutionStages[stage];
+
+    const spirit = getSpiritAnimal();
+    if (spirit) updateSpiritImage(spirit, stage);
+});
+
+// Mood
+moodButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const mood = btn.getAttribute("data-mood");
+        if (!mood) return;
+        setMood(mood);
+        moodLabel.textContent = mood;
+    });
+});
+
+// Energy
+restBtn?.addEventListener("click", () => {
+    const energy = getEnergy();
+    updateEnergyUI(energy + 20);
+});
+
+ritualCostBtn?.addEventListener("click", () => {
+    const energy = getEnergy();
+    updateEnergyUI(energy - 15);
+});
+
+// Quests
+questButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const li = btn.closest("li");
+        const id = li?.getAttribute("data-quest");
+        if (!id) return;
+        completeQuest(id);
+        btn.disabled = true;
+        btn.textContent = "Completed";
+    });
+});
+
+// Rituals
+ritualButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const li = btn.closest("li");
+        const id = li?.getAttribute("data-ritual");
+        if (!id) return;
+        completeRitual(id);
+        btn.disabled = true;
+        btn.textContent = "Performed";
+    });
+});
+
+// Run on load (after theme + body fade)
+window.addEventListener("load", initSanctuary);
+
