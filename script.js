@@ -278,6 +278,29 @@ function spawnSigil() {
 setInterval(spawnSigil, 2000);
 
 /* ---------------------------------------------------------
+   SPIRIT SHIMMER PARTICLES
+--------------------------------------------------------- */
+
+function spawnShimmer() {
+    const frame = document.getElementById("spirit-image-frame");
+    if (!frame) return;
+
+    for (let i = 0; i < 4; i++) {
+        const s = document.createElement("div");
+        s.classList.add("spirit-shimmer");
+
+        s.style.left = (Math.random() * 90 + 5) + "%";
+        s.style.top = (Math.random() * 90 + 5) + "%";
+        s.style.animationDuration = (2 + Math.random() * 2) + "s";
+
+        frame.appendChild(s);
+        setTimeout(() => s.remove(), 3000);
+    }
+}
+
+setInterval(spawnShimmer, 1200);
+
+/* ---------------------------------------------------------
    15. MAGICAL CURSOR TRAIL
 --------------------------------------------------------- */
 
@@ -362,32 +385,24 @@ const evolutionStages = [
 ];
 
 // Initialize sanctuary from saved data
-function initSanctuary() {
-   updateAura(spirit);
-    const savedName = getUsername();
-    if (savedName && usernameInput) {
-        usernameInput.value = savedName;
-    }
+function updateAura(spirit) {
+    if (!aura) return;
 
-    const spirit = getSpiritAnimal();
+    aura.className = ""; // reset
+
+    // Base species aura
+    aura.classList.add(`aura-${spirit || "default"}`);
+
+    // Animated pulse
+    aura.classList.add("aura-animated");
+
+    // Evolution intensity
     const stage = getEvolutionStage();
+    aura.classList.add(`aura-stage-${stage}`);
+
+    // Mood tint
     const mood = getMood();
-    const energy = getEnergy();
-
-    if (spirit && currentSpiritLabel) {
-        currentSpiritLabel.textContent = formatSpiritName(spirit);
-        updateSpiritImage(spirit, stage);
-    }
-
-    if (evolutionLabel) {
-        evolutionLabel.textContent = evolutionStages[stage] || evolutionStages[0];
-    }
-
-    if (moodLabel) {
-        moodLabel.textContent = mood;
-    }
-
-    updateEnergyUI(energy);
+    aura.classList.add(`aura-mood-${mood}`);
 }
 
 function formatSpiritName(key) {
