@@ -344,4 +344,51 @@ body.grimoire-open {
     background: radial-gradient(circle, rgba(255,160,80,0.7), rgba(120,40,0,0.2));
 }
 
+/* ---------------------------------------------------------
+   LIVING AURA ANIMATIONS
+--------------------------------------------------------- */
+
+@keyframes auraPulse {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.08); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.7; }
+}
+
+@keyframes auraFlare {
+    0% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 0.4; transform: scale(1); }
+}
+
+.aura-animated {
+    animation: auraPulse 6s ease-in-out infinite;
+}
+
+.aura-flare {
+    animation: auraFlare 1.8s ease-out;
+}
+
+/* Mood-based tint overlays */
+
+.aura-mood-joyful {
+    filter: hue-rotate(40deg) brightness(1.2);
+}
+
+.aura-mood-focused {
+    filter: hue-rotate(-20deg) saturate(1.3);
+}
+
+.aura-mood-tired {
+    filter: brightness(0.7) saturate(0.6);
+}
+
+.aura-mood-anxious {
+    filter: hue-rotate(180deg) saturate(0.8);
+}
+
+/* Evolution intensity */
+
+.aura-stage-1 { opacity: 0.6; }
+.aura-stage-2 { opacity: 0.8; }
+.aura-stage-3 { opacity: 1; }
 
