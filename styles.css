@@ -145,6 +145,25 @@ body {
     background-blend-mode: overlay;
 }
 
+.theme-grimoire {
+    background:
+        url("assets/backgrounds/grimoire/sigils-overlay.png") center/contain repeat,
+        url("assets/backgrounds/grimoire/runes-overlay.png") center/contain repeat,
+        url("assets/backgrounds/grimoire/ouija-wood.jpg") center/cover no-repeat,
+        radial-gradient(circle at center, #1a001a, #050005);
+    background-blend-mode: overlay, lighten, normal;
+}
+
+.theme-grimoire::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("assets/backgrounds/grimoire/runes-overlay.png") center/contain repeat;
+    opacity: 0.08;
+    animation: slowSpin 60s linear infinite;
+    pointer-events: none;
+}
+
 .theme-celestial {
     background:
         url("assets/backgrounds/celestial.png"),
@@ -152,16 +171,97 @@ body {
     color: #222;
 }
 
+.theme-celestial {
+    background:
+        url("assets/backgrounds/celestial/constellations.png") center/contain repeat,
+        url("assets/backgrounds/celestial/stars.png") center/contain repeat,
+        url("assets/backgrounds/celestial/nebula.jpg") center/cover no-repeat,
+        linear-gradient(180deg, #d8caff, #a7d8ff, #ffffff);
+    background-blend-mode: screen, lighten, normal;
+    color: #222;
+}
+
+.theme-celestial::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("assets/backgrounds/celestial/stars.png") center/contain repeat;
+    opacity: 0.2;
+    animation: driftStars 90s linear infinite;
+    pointer-events: none;
+}
+
+
 .theme-druidic {
     background:
         url("assets/backgrounds/druidic.png"),
         linear-gradient(180deg, #0f3d1e, #1a5e2a, #0b2412);
 }
 
+.theme-druidic {
+    background:
+        url("assets/backgrounds/druidic/all-seeing-eyes.png") center/contain repeat,
+        url("assets/backgrounds/druidic/hand-glyphs.png") center/contain repeat,
+        url("assets/backgrounds/druidic/totem-heads.png") center/contain repeat,
+        url("assets/backgrounds/druidic/forest-bark.jpg") center/cover no-repeat,
+        linear-gradient(180deg, #0f3d1e, #1a5e2a, #0b2412);
+    background-blend-mode: overlay, multiply, normal;
+}
+
+.theme-druidic::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("assets/backgrounds/druidic/vines.png") center/contain repeat;
+    opacity: 0.1;
+    animation: slowGrow 120s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
 .theme-gothic {
     background:
         url("assets/backgrounds/gothic.png"),
         linear-gradient(180deg, #000000, #1a1a1a, #000000);
+}
+
+.theme-gothic {
+    background:
+        url("assets/backgrounds/gothic/smoke.png") center/cover repeat,
+        url("assets/backgrounds/gothic/pentagrams.png") center/contain repeat,
+        url("assets/backgrounds/gothic/herbs.png") center/contain repeat,
+        url("assets/backgrounds/gothic/dark-stone.jpg") center/cover no-repeat,
+        linear-gradient(180deg, #000000, #1a1a1a, #000000);
+    background-blend-mode: screen, overlay, normal;
+}
+
+.theme-gothic::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("assets/backgrounds/gothic/smoke.png") center/cover repeat;
+    opacity: 0.25;
+    animation: smokeDrift 50s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes slowSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes driftStars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-200px); }
+}
+
+@keyframes slowGrow {
+    from { transform: scale(1); }
+    to { transform: scale(1.15); }
+}
+
+@keyframes smokeDrift {
+    from { transform: translateX(0); }
+    to { transform: translateX(200px); }
 }
 
 /* ---------------------------------------------------------
