@@ -312,6 +312,38 @@ const ritualCostBtn = document.getElementById("ritualCostBtn");
 const questButtons = document.querySelectorAll(".quest-complete");
 const ritualButtons = document.querySelectorAll(".ritual-complete");
 
+/* ---------------------------------------------------------
+   SPIRIT AURA LOGIC
+--------------------------------------------------------- */
+
+const aura = document.getElementById("spirit-aura");
+
+function updateAura(spirit) {
+    if (!aura) return;
+
+    aura.className = ""; // clear old aura
+
+    switch (spirit) {
+        case "wolf":
+            aura.classList.add("aura-wolf");
+            break;
+        case "owl":
+            aura.classList.add("aura-owl");
+            break;
+        case "stag":
+            aura.classList.add("aura-stag");
+            break;
+        case "serpent":
+            aura.classList.add("aura-serpent");
+            break;
+        case "fox":
+            aura.classList.add("aura-fox");
+            break;
+        default:
+            aura.classList.add("aura-default");
+    }
+}
+
 // Map spirit → image path
 const spiritImages = {
     wolf: "assets/creatures/wolf-stage1.png",
