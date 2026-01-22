@@ -363,6 +363,7 @@ const evolutionStages = [
 
 // Initialize sanctuary from saved data
 function initSanctuary() {
+   updateAura(spirit);
     const savedName = getUsername();
     if (savedName && usernameInput) {
         usernameInput.value = savedName;
@@ -434,6 +435,7 @@ spiritButtons.forEach(btn => {
         currentSpiritLabel.textContent = formatSpiritName(animal);
         evolutionLabel.textContent = evolutionStages[1];
         updateSpiritImage(animal, 1);
+       updateAura(animal);
         completeQuest("q1");
         alert(`A pact is sealed with the ${formatSpiritName(animal)}.`);
     });
@@ -452,6 +454,7 @@ evolveBtn?.addEventListener("click", () => {
 
     const spirit = getSpiritAnimal();
     if (spirit) updateSpiritImage(spirit, stage);
+   updateAura(getSpiritAnimal());
 });
 
 // Mood
