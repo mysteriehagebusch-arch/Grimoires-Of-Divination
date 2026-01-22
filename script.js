@@ -515,6 +515,26 @@ ritualButtons.forEach(btn => {
         btn.disabled = true;
         btn.textContent = "Performed";
     });
+
+   aura.classList.add("aura-flare");
+setTimeout(() => aura.classList.remove("aura-flare"), 2000);
+
+   ritualButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const li = btn.closest("li");
+        const id = li?.getAttribute("data-ritual");
+        if (!id) return;
+
+        completeRitual(id);
+        btn.disabled = true;
+        btn.textContent = "Performed";
+
+        // Aura flare
+        aura.classList.add("aura-flare");
+        setTimeout(() => aura.classList.remove("aura-flare"), 2000);
+    });
+});
+
 });
 
 // Run on load (after theme + body fade)
