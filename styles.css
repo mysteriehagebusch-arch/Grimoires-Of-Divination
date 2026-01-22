@@ -136,15 +136,6 @@ body {
 /* ---------------------------------------------------------
    THEMES
 --------------------------------------------------------- */
-
-.theme-grimoire {
-    background:
-        url("assets/backgrounds/grimoire-texture.png"),
-        radial-gradient(circle at center, #2a0033, #0a0011);
-    background-size: cover;
-    background-blend-mode: overlay;
-}
-
 .theme-grimoire {
     background:
         url("assets/backgrounds/grimoire/sigils-overlay.png") center/contain repeat,
@@ -162,13 +153,6 @@ body {
     opacity: 0.08;
     animation: slowSpin 60s linear infinite;
     pointer-events: none;
-}
-
-.theme-celestial {
-    background:
-        url("assets/backgrounds/celestial.png"),
-        linear-gradient(180deg, #d8caff, #a7d8ff, #ffffff);
-    color: #222;
 }
 
 .theme-celestial {
@@ -191,13 +175,6 @@ body {
     pointer-events: none;
 }
 
-
-.theme-druidic {
-    background:
-        url("assets/backgrounds/druidic.png"),
-        linear-gradient(180deg, #0f3d1e, #1a5e2a, #0b2412);
-}
-
 .theme-druidic {
     background:
         url("assets/backgrounds/druidic/all-seeing-eyes.png") center/contain repeat,
@@ -216,12 +193,6 @@ body {
     opacity: 0.1;
     animation: slowGrow 120s ease-in-out infinite alternate;
     pointer-events: none;
-}
-
-.theme-gothic {
-    background:
-        url("assets/backgrounds/gothic.png"),
-        linear-gradient(180deg, #000000, #1a1a1a, #000000);
 }
 
 .theme-gothic {
