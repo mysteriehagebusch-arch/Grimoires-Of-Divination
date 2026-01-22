@@ -134,13 +134,15 @@ body {
 }
 
 /* ---------------------------------------------------------
-   THEMES
+   THEMES — FIXED TO MATCH YOUR REAL FILES
 --------------------------------------------------------- */
+
+/* 🜁 GRIMOIRE — ouija boards, runes, sigils */
 .theme-grimoire {
     background:
-        url("assets/backgrounds/grimoire/sigils-overlay.png") center/contain repeat,
-        url("assets/backgrounds/grimoire/runes-overlay.png") center/contain repeat,
-        url("assets/backgrounds/grimoire/ouija-wood.jpg") center/cover no-repeat,
+        url("assets/backgrounds/sigils-overlay.png") center/contain repeat,
+        url("assets/backgrounds/runes-overlay.png") center/contain repeat,
+        url("assets/backgrounds/ouija-wood.jpg") center/cover no-repeat,
         radial-gradient(circle at center, #1a001a, #050005);
     background-blend-mode: overlay, lighten, normal;
 }
@@ -149,19 +151,18 @@ body {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("assets/backgrounds/grimoire/runes-overlay.png") center/contain repeat;
+    background: url("assets/backgrounds/runes-overlay.png") center/contain repeat;
     opacity: 0.08;
     animation: slowSpin 60s linear infinite;
     pointer-events: none;
 }
 
+/* 🌙 CELESTIAL — stars, universes, moons */
 .theme-celestial {
     background:
-        url("assets/backgrounds/celestial/constellations.png") center/contain repeat,
-        url("assets/backgrounds/celestial/stars.png") center/contain repeat,
-        url("assets/backgrounds/celestial/nebula.jpg") center/cover no-repeat,
+        url("assets/backgrounds/celestial.png") center/cover no-repeat,
         linear-gradient(180deg, #d8caff, #a7d8ff, #ffffff);
-    background-blend-mode: screen, lighten, normal;
+    background-blend-mode: screen;
     color: #222;
 }
 
@@ -169,51 +170,51 @@ body {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("assets/backgrounds/celestial/stars.png") center/contain repeat;
-    opacity: 0.2;
+    background: url("assets/backgrounds/celestial.png") center/contain repeat;
+    opacity: 0.15;
     animation: driftStars 90s linear infinite;
     pointer-events: none;
 }
 
+/* 🌿 DRUIDIC — eyes, hands, totems */
 .theme-druidic {
     background:
-        url("assets/backgrounds/druidic/all-seeing-eyes.png") center/contain repeat,
-        url("assets/backgrounds/druidic/hand-glyphs.png") center/contain repeat,
-        url("assets/backgrounds/druidic/totem-heads.png") center/contain repeat,
-        url("assets/backgrounds/druidic/forest-bark.jpg") center/cover no-repeat,
+        url("assets/backgrounds/druidic.png") center/cover no-repeat,
         linear-gradient(180deg, #0f3d1e, #1a5e2a, #0b2412);
-    background-blend-mode: overlay, multiply, normal;
+    background-blend-mode: multiply;
 }
 
 .theme-druidic::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("assets/backgrounds/druidic/vines.png") center/contain repeat;
+    background: url("assets/backgrounds/druidic.png") center/contain repeat;
     opacity: 0.1;
     animation: slowGrow 120s ease-in-out infinite alternate;
     pointer-events: none;
 }
 
+/* 🦇 GOTHIC — pentagrams, candles, herbs, smoke */
 .theme-gothic {
     background:
-        url("assets/backgrounds/gothic/smoke.png") center/cover repeat,
-        url("assets/backgrounds/gothic/pentagrams.png") center/contain repeat,
-        url("assets/backgrounds/gothic/herbs.png") center/contain repeat,
-        url("assets/backgrounds/gothic/dark-stone.jpg") center/cover no-repeat,
+        url("assets/backgrounds/gothic.png") center/cover no-repeat,
         linear-gradient(180deg, #000000, #1a1a1a, #000000);
-    background-blend-mode: screen, overlay, normal;
+    background-blend-mode: overlay;
 }
 
 .theme-gothic::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("assets/backgrounds/gothic/smoke.png") center/cover repeat;
+    background: url("assets/backgrounds/gothic.png") center/contain repeat;
     opacity: 0.25;
     animation: smokeDrift 50s linear infinite;
     pointer-events: none;
 }
+
+/* ---------------------------------------------------------
+   ANIMATIONS
+--------------------------------------------------------- */
 
 @keyframes slowSpin {
     from { transform: rotate(0deg); }
