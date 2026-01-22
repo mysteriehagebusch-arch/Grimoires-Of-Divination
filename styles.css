@@ -296,3 +296,52 @@ body.grimoire-open {
     from { opacity: 1; transform: scale(1); }
     to { opacity: 0; transform: scale(0.4); }
 }
+/* ---------------------------------------------------------
+   SPIRIT AURA COLORS
+--------------------------------------------------------- */
+
+#spirit-image-frame {
+    position: relative;
+}
+
+#spirit-aura {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    filter: blur(25px);
+    opacity: 0.8;
+    z-index: -1;
+    transition: background 1.2s ease, opacity 1.2s ease;
+}
+
+/* Default aura */
+.aura-default {
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(0,0,0,0));
+}
+
+/* Wolf — icy blue */
+.aura-wolf {
+    background: radial-gradient(circle, rgba(120,180,255,0.7), rgba(0,40,80,0.2));
+}
+
+/* Owl — violet */
+.aura-owl {
+    background: radial-gradient(circle, rgba(180,120,255,0.7), rgba(60,0,120,0.2));
+}
+
+/* Stag — green */
+.aura-stag {
+    background: radial-gradient(circle, rgba(120,255,160,0.7), rgba(0,80,40,0.2));
+}
+
+/* Serpent — cosmic cyan */
+.aura-serpent {
+    background: radial-gradient(circle, rgba(120,255,255,0.7), rgba(0,60,80,0.2));
+}
+
+/* Fox — ember orange */
+.aura-fox {
+    background: radial-gradient(circle, rgba(255,160,80,0.7), rgba(120,40,0,0.2));
+}
+
+
