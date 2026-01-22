@@ -67,11 +67,118 @@
             </nav>
         </header>
 
-        <!-- Main Panel -->
-        <div class="panel">
-            <h2>Spirit Animal Sanctuary</h2>
-            <p>Welcome, traveler. Your journey begins here.</p>
+       <!-- Main Panel: Spirit Animal Sanctuary -->
+<div class="panel" id="sanctuary">
+
+    <!-- Profile + Theme -->
+    <section id="profile-bar">
+        <div class="profile-left">
+            <div class="profile-name">
+                <label for="username-input">Traveler Name:</label>
+                <input type="text" id="username-input" placeholder="Enter your name">
+                <button id="saveNameBtn">Set Name</button>
+            </div>
+            <div class="profile-spirit">
+                <span>Bound Spirit:</span>
+                <span id="current-spirit">None chosen</span>
+            </div>
         </div>
+        <div class="profile-right">
+            <span>Theme:</span>
+            <button onclick="setTheme('theme-grimoire')">Grimoire</button>
+            <button onclick="setTheme('theme-celestial')">Celestial</button>
+            <button onclick="setTheme('theme-druidic')">Druidic</button>
+            <button onclick="setTheme('theme-gothic')">Gothic</button>
+        </div>
+    </section>
+
+    <!-- Spirit + Evolution -->
+    <section id="spirit-section">
+        <div id="spirit-visual">
+            <div id="spirit-image-frame">
+                <img id="spirit-image" src="" alt="Your Spirit" style="display:none;">
+                <div id="spirit-placeholder">No spirit bound yet.</div>
+            </div>
+            <div id="evolution-info">
+                <h3>Evolution Stage</h3>
+                <p id="evolution-label">Unawakened</p>
+                <button id="evolveBtn">Evolve Spirit</button>
+            </div>
+        </div>
+
+        <div id="spirit-choices">
+            <h3>Choose Your Spirit</h3>
+            <div class="spirit-grid">
+                <button class="spirit-choice" data-animal="wolf">Lunar Wolf</button>
+                <button class="spirit-choice" data-animal="owl">Oracle Owl</button>
+                <button class="spirit-choice" data-animal="stag">Verdant Stag</button>
+                <button class="spirit-choice" data-animal="serpent">Astral Serpent</button>
+                <button class="spirit-choice" data-animal="fox">Ember Fox</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood + Energy -->
+    <section id="status-bars">
+        <div class="status-block">
+            <h3>Mood</h3>
+            <p id="mood-label">neutral</p>
+            <div class="status-buttons">
+                <button data-mood="joyful">Joyful</button>
+                <button data-mood="focused">Focused</button>
+                <button data-mood="tired">Tired</button>
+                <button data-mood="anxious">Anxious</button>
+            </div>
+        </div>
+        <div class="status-block">
+            <h3>Energy</h3>
+            <div class="bar-wrapper">
+                <div id="energy-bar"></div>
+            </div>
+            <div class="status-buttons">
+                <button id="restBtn">Rest +20</button>
+                <button id="ritualCostBtn">Cast Ritual -15</button>
+            </div>
+            <p id="energy-label">100</p>
+        </div>
+    </section>
+
+    <!-- Quests + Rituals + Inventory -->
+    <section id="lower-grid">
+        <div class="card" id="quests-card">
+            <h3>Quests</h3>
+            <ul id="quest-list">
+                <li data-quest="q1"><button class="quest-complete">Attune to your spirit</button></li>
+                <li data-quest="q2"><button class="quest-complete">Perform a nightly reflection</button></li>
+                <li data-quest="q3"><button class="quest-complete">Offer gratitude to the unseen</button></li>
+            </ul>
+        </div>
+
+        <div class="card" id="rituals-card">
+            <h3>Rituals</h3>
+            <ul id="ritual-list">
+                <li data-ritual="r1"><button class="ritual-complete">Circle of Protection</button></li>
+                <li data-ritual="r2"><button class="ritual-complete">Candle of Clarity</button></li>
+                <li data-ritual="r3"><button class="ritual-complete">Dreamway Opening</button></li>
+            </ul>
+        </div>
+
+        <div class="card" id="inventory-card">
+            <h3>Inventory</h3>
+            <ul id="inventory-list">
+                <li>✧ Empty pouch, waiting for artifacts.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Save / Erase Controls -->
+    <section id="save-controls">
+        <button id="saveGameBtn">Save Grimoire</button>
+        <button id="eraseRitualBtn">Erase Progress Ritual</button>
+    </section>
+
+</div>
+
 
         <!-- Save / Erase Controls -->
         <div id="save-controls">
