@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const name = localStorage.getItem("playerName");
+  if (name) {
+    document.getElementById("player-name").textContent = name;
+  }
+});
+
 /* ---------------------------------------------------------
    1. GLOBAL SAVE SYSTEM
 --------------------------------------------------------- */
