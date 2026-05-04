@@ -1,3 +1,8 @@
+const playerName = localStorage.getItem("playerName");
+if (!playerName) {
+  window.location.href = "login.html";
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
