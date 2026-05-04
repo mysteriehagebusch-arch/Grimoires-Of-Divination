@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter the Grimoire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login-page">
+
+  <div class="login-container">
+    <h1 class="login-title">🔮 Enter the Grimoire</h1>
+
+    <label for="username">Your Mystic Name</label>
+    <input id="username" type="text" placeholder="e.g., Starweaver">
+
+    <button id="login-btn">Begin Your Journey</button>
+  </div>
+
+  <script>
+    document.getElementById("login-btn").addEventListener("click", () => {
+      const name = document.getElementById("username").value.trim();
+      if (!name) return alert("Please enter your mystic name.");
+
+      localStorage.setItem("playerName", name);
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+</html>
